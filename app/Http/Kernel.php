@@ -67,5 +67,11 @@ class Kernel extends HttpKernel
         //XSS Protection middleware
         'Xss' => \App\Http\Middleware\XssSanitize::class,
 
+        //Prevent back history after logging out
+        'prevent-back-history' => \App\Http\Middleware\PreventBackHistory::class,
+
+        //Standard User protection middleware
+        'standard' => \App\Http\Middleware\StandardUser::class,
+
     ];
 }

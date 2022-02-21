@@ -21,6 +21,13 @@
 	font-size: 30px;
 }
 
+/* Styles the navbar logo */
+.mainNavbarLogo {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
 /* Styles the navbar links */
 .bottom-style:hover {
 	border-bottom: 1px solid #FFA500;
@@ -47,6 +54,17 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+/* Styles the main slide carousel buttons */
+.mainSlideCarouselButtons {
+	border:  1px solid white;
+	border-radius: 50%;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.8);
+	width: 5%;
+	height: 7%;
+	margin-top: 25%;
 }
 
 /* Styles the main slides text */
@@ -90,7 +108,7 @@
 }
 
 /* Start of circle styling */
-.circle {
+.circle, .footerCircle {
 	position: relative;
 	width: 225px;
 	height: 225px;
@@ -103,7 +121,7 @@
 }
 
 /* Start of logo styling */
-.logo {
+.logo, .footerLogo {
 	position: absolute;
 	width: 175px;
 	height: 175px;
@@ -116,7 +134,7 @@
 }
 
 /* Start of text styling */
-.text {
+.text, .footerText {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -141,6 +159,14 @@
 	transform-origin: 0 112.5px;
 }
 
+.footerText span {
+	position: absolute;
+	top: -15%;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 112.5px;
+}
+
 /* Start of motto styling */
 .motto {
 	width: 100%;
@@ -157,14 +183,20 @@
 	margin-top: 8%;
 }
 
-/* Start of products, blog and operations areaa styling */
+/* Start of products, blog and operations area styling */
 #area-products, #area-operations{
 	background: rgb(0, 0, 0);
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.products-header-text, .blog-header-text, .operations-header-text {
+.products-header-text, .blog-header-text, .operations-header-text, .about-us-header-text, .contacts-header-text {
 	font-family: 'Italianno', cursive;
+}
+
+.about-us-content-text {
+	font-family: 'Italianno', cursive;
+	font-size: 32px;
+	text-indent: 10%;
 }
 
 .swiper-container {
@@ -245,14 +277,14 @@
 }
 
 #slide-8 {
-	background: url('/images/swiper-images/bakery/bakery.jpg');
+	background: url('/images/swiper-images/bakery/bakery-1.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 #slide-9 {
-	background: url('/images/swiper-images/bakery/bakery-1.jpg');
+	background: url('/images/swiper-images/bakery/bakery.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -316,5 +348,298 @@
 	background: rgb(0, 0, 0);
 	background: rgba(0, 0, 0, 0.5);
 }
+
+/* Start of About Us Styling */
+.wordCarousel {
+	font-size: 22px;
+	font-family: serif, sans-serif;
+	font-weight: 300;
+}
+
+.wordCarousel div {
+	overflow: hidden;
+	position: relative;
+	height: 60px;
+}
+
+.wordCarousel div li {
+	height: 30px;
+	margin-bottom: 60px;
+	display: block;
+	padding-top: 10px;
+}
+
+.flip4 { 
+	animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip4 {
+	0% { 
+		margin-top: -360px; 
+	}
+	5% { 
+		margin-top: -270px; 
+	}
+	25% { 
+		margin-top: -270px; 
+	}
+	30% { 
+		margin-top: -180px; 
+	}
+	50% { 
+		margin-top: -180px; 
+	}
+	55% { 
+		margin-top: -90px; 
+	}
+	75% { 
+		margin-top: -90px; 
+	}
+	80% { 
+		margin-top: 0px; 
+	}
+	99.99% { 
+		margin-top: 0px; 
+	}
+	100% { 
+		margin-top: -270px; 
+	}
+}
+
+.aboutUsText, .contactsText, .visitText {
+	font-family: serif, sans-serif;
+	font-size: 20px;
+	text-indent: 5%;
+}
+
+.aboutUsImage {
+	width: 225px;
+	height: 225px;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#aboutUsScrollTextLink {
+	font-size: 12px;
+	padding-left: 5px;
+	color: #FFFFFF;
+}
+
+#aboutUsScrollTextLink:hover {
+	border-left: 1px solid orange;
+	color: #FFA500;
+}
+
+#aboutUsLinkText {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#aboutUsValuesArea {
+	background-image: url('/images/confectionery-3.jpg'); 
+	background-size: cover; 
+	background-attachment: fixed; 
+	background-repeat: no-repeat;
+}
+
+.reveal {
+	opacity: 0;
+	transition: 3s all ease;
+}
+
+.reveal.active {
+	opacity: 1;
+}
+
+.topReveal {
+	transform: translateY(-150px);
+	opacity: 0;
+	transition: 3s all ease;
+}
+
+.topReveal.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.leftReveal {
+	transform: translateX(-150px);
+	opacity: 0;
+	transition: 3s all ease;
+}
+
+.leftReveal.active {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.rightReveal {
+	transform: translateX(150px);
+	opacity: 0;
+	transition: 3s all ease;
+}
+
+.rightReveal.active {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.bottomReveal {
+	transform: translateY(150px);
+	opacity: 0;
+	transition: 3s all ease;
+}
+
+.bottomReveal.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.shade {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.contacts-text {
+	font-family: 'Italianno', cursive;
+	font-size: 36px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#contactsIcons {
+	color: #FFFFFF;
+}
+
+#contactsIcons:hover {
+	color: #FFA500;
+}
+
+#contactsIconsLinks {
+	color: #FFFFFF;
+}
+
+#contactsIconsLinks:hover {
+	color: #FFA500;
+}
+
+.working-hours-text, .location-text {
+	font-family: 'Italianno', cursive;
+	font-size: 38px;
+	text-decoration: underline;
+}
+
+.locationCard {
+	border-radius: 5%;
+}
+
+.locationCardText {
+	font-family: 'Italianno', cursive;
+	font-size: 26px;
+	text-decoration: underline;
+}
+
+.locationCardBodyText {
+	font-family: serif, sans-serif;
+	font-size: 18px;
+}
+
+.locationIcon {
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 15%;
+}
+
+/* Start Of Main Footer Styling */
+.main-footer {
+	/*background: linear-gradient(to right, black, orange);*/
+	border: 1px solid white;
+}
+
+.textFooter {
+	font-family: serif, sans-serif;
+	font-size: 18px;
+	text-indent: 10px;
+	text-decoration: none;
+}
+
+.textFooterUnderline {
+	text-decoration: underline;
+}
+
+.paymentIcon {
+	width: 75px;
+	height: 50px;
+	border-radius: 15px;
+}
+
+.subscribeButton, .resetButton, .registerButton, .loginButton, .resetPasswordButton {
+	font-family: serif, sans-serif;
+	font-size: 12px;
+	font-weight: 175;
+	font-style: italic;
+	text-transform: uppercase;
+	border-radius: 25px;
+}
+
+#inputSubscriptionEmail, #inputName, #inputEmail, #inputPassword, #inputPasswordConfirm, #inputSystemRole{
+	border-radius: 15px;
+	width: 100%;
+}
+
+#inputSubscriptionEmail:hover, #inputName:hover, #inputEmail:hover, #inputPassword:hover, #inputPasswordConfirm:hover, #inputSystemRole:hover {
+	background: #FF8000;
+	cursor: pointer;
+}
+
+#inputSubscriptionEmail:focus, #inputName:focus, #inputEmail:focus, #inputPassword:focus, #inputPasswordConfirm:focus, #inputSystemRole:focus {
+	background: #FFCC99;
+}
+
+/* Start of Auth pages styling i.e. login, registration, reset password and email verification link */
+.registrationCard, .loginCard, .emailVerificationCard, .emailPasswordResetCard, .resetPasswordCard, .confirmPasswordResetCard {
+	width: 75%;
+	margin-left: 12%;
+}
+
+.cardHeader {
+	background: linear-gradient(to right, black, orange);
+}
+
+.cardHeaderText {
+	color: #FFFFFF;
+	font-family: 'Italianno', cursive;
+	font-size: 30px;
+}
+
+.cardLabelText {
+	font-family: serif, sans-serif;
+	text-transform: uppercase;
+}
+
+#togglePassword {
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	margin-top: -25px;
+}
+
+#togglePassword:hover {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
