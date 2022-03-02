@@ -18,7 +18,6 @@
     <meta name="keywords" content="BigMomPastry, Bakery, Pastry, Confectionery, Cakes, Cookies, Bread, Buns, Birthday Cakes, Wedding Cakes, Anniversary Cakes etc...">
     <meta property="og:description" content="BigMomPastry, Bakery, Pastry, Confectionery, Cakes, Cookies, Bread, Buns, Birthday Cakes, Wedding Cakes, Anniversary Cakes etc..." xmlns:og="http://opengraphprotocol.org/schema/">
 
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/extra.js') }}" defer></script>
@@ -67,196 +66,144 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-dark shadow-sm" id="main-nav-bar">
             <div class="container">
-                <img src="{{url('/images/BigMomPastryLogo.jpg')}}" class="mainNavbarLogo" id="" alt="bigmompastrylogo">
-                <a class="navbar-brand text-white styled-text bottom-style" href="{{ url('/') }}">{{ config('app.name', 'BigMomPastry') }}</a>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <img src="{{url('/images/BigMomPastryLogo.jpg')}}" class="mainNavbarLogo" id="" alt="bigmompastrylogo">
+                        <a class="navbar-brand text-white styled-text bottom-style" href="{{ url('/') }}">{{ config('app.name', 'BigMomPastry') }}</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#products-area">{{ __('Products') }}</a>
-                        </li>
+                    <div class="container-fluid pt-2">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                                <!-- Left Side Of Navbar -->
+                                <ul class="navbar-nav me-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#products-area">{{ __('Products') }}</a>
+                                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#blog-area">{{ __('Blog') }}</a>
-                        </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#blog-area">{{ __('Blog') }}</a>
+                                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#operations-area">{{ __('Operations') }}</a>
-                        </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#operations-area">{{ __('Operations') }}</a>
+                                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#about-us-area">{{ __('About Us') }}</a>
-                        </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle text-white styled-text bottom-style" href="#" role="button" id="aboutUsDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ __('About Us') }}</a>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#contacts-area">{{ __('Contacts') }}</a>
-                        </li>
-                    </ul>
+                                        <ul class="dropdown-menu bg-dark" aria-labelledby="aboutUsDropDownMenu">
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('index')}}#about-us-area">AboutUs Section</a></li>
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('ourValues')}}">Our Values</a></li>
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('index')}}">Learn More</a></li>
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('MasterclassIndex')}}">Book A Master Class</a></li>
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="#">Find A BigMomPastry Outlet</a></li>
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="#">Sustainability At BigMomPastry</a></li>
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="#">BigMomPastryKenya</a></li>
+                                        </ul>
+                                    </li>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link text-white styled-text background-style" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#contacts-area">{{ __('Contacts') }}</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link text-white styled-text background-style" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <!-- Right Side Of Navbar -->
+                                <ul class="navbar-nav ms-auto">
+                                    <!-- Authentication Links -->
+                                    @guest
+                                    <i class="fa-solid fa-circle-user fa-2x text-white p-2"></i>
+                                    <li class="nav-item dropdown">
+                                        <p class="dropdown-toggle pt-2 styled-text text-white accountStatusText" id="accountStatusDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ __('My Account') }}</p>
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                                        <ul class="dropdown-menu bg-dark" aria-labelledby="accountStatusDropDownMenu">
+                                            @if (Route::has('login'))
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item text-white styled-text background-style" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                            </li>
+                                            @endif
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
+                                            @if (Route::has('register'))
+                                            <li class="nav-item">
+                                                <a class="nav-link dropdown-item text-white styled-text background-style" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                            </li>
+                                            @endif
+                                        </ul>
+                                    </li>
+                                    @else
+                                    <li class="nav-item dropdown">
+                                        <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>{{ Auth::user()->name }}</a>
+
+                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="{{ route('logout') }}" 
+                                            onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+
+                                            <form action="{{ route('logout') }}" method="POST" class="d-none" id="logout-form" accept-charset="UTF-8" enctype="multipart/form-data">
+                                                @csrf
+                                            </form>
+                                        </div>
+                                    </li>
+                                    @endguest
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        <main class="container-fluid pt-5">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 banner">
-                    @yield('content')
+        @if (Auth::check() && Auth::user()->system_role === 'standard-user')
+            <main class="container-fluid pt-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 banner">
+                        @yield('standard-content')
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        @else
+            <main class="container-fluid pt-5">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 banner">
+                        @yield('guest-content')
+                    </div>
+                </div>
+            </main>
+        @endif
     </div>
 
     <!-- Start Of Main Footer Section -->
     <footer class="bg-dark text-muted">
         <div class="container-fluid text-center justify-content-center main-footer">
-            <div class="row">
+            <div class="row footerUniqueBorderBottom">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 pb-1">
+                    <p class="text-white footerUniqueText"><i class="fa-solid fa-arrow-pointer fa-1x text-white"></i>Click to Order Right Now !!!</p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 pb-1">
+                    <p class="text-white footerUniqueText"><i class="fa-solid fa-solid fa-clock fa-1x text-white"></i><i>12 Noon cut off time for next day orders</i></p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 pb-1">
+                    <p class="text-white footerUniqueText"><i class="fa-solid fa-truck fa-1x text-white"></i>Delivery across <b>Nairobi</b></p>
+                </div>
+            </div>
+
+            <div class="row pt-3">
                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                     <h5 class="display-6 text-white pt-3 styled-text textFooterUnderline">BIGMOMPASTRY</h5>
 
                     <p class="text-white textFooter">As a pastry and confectionery bakery, distributor and outlet, we pride ourselves in delivering high quality, fresh and healthy baked products.</p>
 
                     <p class="text-white textFooter">We want to bring an entirely new and different experience when it comes to baked goods. Other than that, we want our customers to enjoy world class pastry and confectionery.</p>
-                </div>
-
-                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                    <h5 class="display-6 text-white pt-3 styled-text textFooterUnderline">NEWSLETTER</h5>
-
-                    <p class="text-white textFooter">Subscribe to our monthly newsletter and get the best in <b><i>pastry</i></b> and <b><i>confectionery</i></b> from <b><i>BigMomPastry</i></b></p>
-
-                    @if (!Auth::check())
-                        <form action="{{route('guestNewsletter')}}" method="POST" role="form" accept-charset="UTF-8" enctype="multipart/form-data">
-                            @csrf
-
-                            <div class="row pt-3 pb-3">
-                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                    <input type="email" name="subscription_email" class="form-control @error('subscription_email') is-invalid @enderror" id="inputSubscriptionEmail" value="{{old('subscription_email')}}" minlength="3" maxlength="50" placeholder="Email" autocomplete="subscription_email" autofocus>
-
-                                    @error('subscription_email')
-                                        <span class="invalid-feedback alert alert-warning" role="alert">
-                                            <strong class="text-danger"><i class="fa-solid fa-circle-exclamation"></i>{{$message}}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                    @if(Session::has('newsletter-subscription-successfull'))
-                                        <div class="alert alert-success alert-dismissible fade show">
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            {{Session::get('newsletter-subscription-successfull')}}
-                                        </div>
-                                    @elseif(Session::has('newsletter-subscription-failed'))
-                                        <div class="alert alert-danger alert-dismissible fade show">
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                            {{Session::get('newsletter-subscription-failed')}}
-                                        </div>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="row pt-3 pb-3">
-                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-success subscribeButton">subscribe</button>
-                                </div>
-                            </div>
-                        </form>
-                    @elseif (Auth::check() && Auth::user()->system_role === 'standard-user')
-                        <form action="{{route('standardUserNewsletter')}}" method="POST" role="form" accept-charset="UTF-8" enctype="multipart/form-data">
-                            @csrf
-
-                            <div class="row pt-3 pb-3">
-                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                    <input type="hidden" name="user_id" class="form-control @error('user_id') is-invalid @enderror" value="{{ auth()->check() && auth()->user()->id }}">
-
-                                    @error('user_id')
-                                        <span class="invalid-feedback alert alert-warning" role="alert">
-                                            <strong class="text-danger"><i class="fa-solid fa-circle-exclamation"></i>{{$message}}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-                            <div class="row pt-3 pb-3">
-                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                    <input type="email" name="subscription_email" class="form-control @error('subscription_email') is-invalid @enderror" id="inputSubscriptionEmail" value="{{old('subscription_email')}}" minlength="3" maxlength="50" placeholder="Email" autocomplete="subscription_email" autofocus>
-
-                                    @error('subscription_email')
-                                        <span class="invalid-feedback alert alert-warning" role="alert">
-                                            <strong class="text-danger"><i class="fa-solid fa-circle-exclamation"></i>{{$message}}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                    @if(Session::has('newsletter-subscription-successfull'))
-                                        <div class="alert alert-success alert-dismissible fade show">
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            {{Session::get('newsletter-subscription-successfull')}}
-                                        </div>
-                                    @elseif(Session::has('newsletter-subscription-failed'))
-                                        <div class="alert alert-danger alert-dismissible fade show">
-                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                                            <i class="fa-solid fa-circle-xmark"></i>
-                                            {{Session::get('newsletter-subscription-failed')}}
-                                        </div>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="row pt-3 pb-3">
-                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-success subscribeButton">subscribe</button>
-                                </div>
-                            </div>
-
-                        </form>
-                    @endif
                 </div>
 
                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
@@ -267,6 +214,16 @@
                     <i class="fa-solid fa-square-phone fa-1x p-2" id="contactsIcons"><a href="tel:+254708621963" class="textFooter" id="contactsIconsLinks" target="_blank">Phone Number</a></i><br>
                     <i class="fa-brands fa-whatsapp fa-1x p-2" id="contactsIcons"><a href="https://api.whatsapp.com/send?phone=254708621963" class="textFooter" id="contactsIconsLinks" target="_blank">Whatsapp</a></i><br>
                     <i class="fa-brands fa-telegram fa-1x p-2" id="contactsIcons"><a href="https://telegram.me/BigMomPastry" class="textFooter" id="contactsIconsLinks" target="_blank">Telegram</a></i>
+                </div>
+
+                <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="footerCircle topReveal">
+                        <div class="footerLogo">
+                            <div class="footerText">
+                                <h5 class="text-white">BIGMOMPASTRY</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
@@ -285,20 +242,120 @@
                     <img src="{{url('/images/payments/coopbank.jpg')}}" class="paymentIcon" id="" alt="coopbank">
                     <img src="{{url('/images/payments/paypal.jpg')}}" class="float-end paymentIcon" id="" alt="paypal">
                     -->
-
                 </div>
-
             </div>
 
-            <div class="row p-3">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center">
-                    <div class="footerCircle topReveal">
-                            <div class="footerLogo">
-                                <div class="footerText">
-                                    <h5 class="text-white">BIGMOMPASTRY</h5>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="modal fade" id="newsletterModalForm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticNewsletterModalFormLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content bg-dark">
+                                <div class="modal-header">
+                                    <img src="{{url('/images/newsletter.jpg')}}" class="newsletterImage" alt="newsletter">
+                                    <h5 class="modal-title display-6 text-white pt-3 styled-text textFooterUnderline" id="staticNewsletterModalFormLabel">NEWSLETTER</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
+                                <div class="modal-body">
+                                    <p class="text-white textFooter">Subscribe to our monthly newsletter and get the best in <b><i>pastry</i></b> and <b><i>confectionery</i></b> from <b><i>BigMomPastry</i></b></p>
+
+                                    @if (!Auth::check())
+                                        <form action="{{route('guestNewsletter')}}" method="POST" role="form" accept-charset="UTF-8" enctype="multipart/form-data">
+                                            @csrf
+
+                                            <div class="row pt-3 pb-3">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                                    <input type="email" name="subscription_email" class="form-control @error('subscription_email') is-invalid @enderror" id="inputSubscriptionEmail" value="{{old('subscription_email')}}" minlength="3" maxlength="50" placeholder="Email" autocomplete="subscription_email" autofocus>
+
+                                                    @error('subscription_email')
+                                                        <span class="invalid-feedback alert alert-warning" role="alert">
+                                                            <strong class="text-danger"><i class="fa-solid fa-circle-exclamation"></i>{{$message}}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                                    @if(Session::has('newsletter-subscription-successfull'))
+                                                        <div class="alert alert-success alert-dismissible fade show">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                                            <i class="fa-solid fa-circle-check"></i>
+                                                            {{Session::get('newsletter-subscription-successfull')}}
+                                                        </div>
+                                                    @elseif(Session::has('newsletter-subscription-failed'))
+                                                        <div class="alert alert-danger alert-dismissible fade show">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                                            <i class="fa-solid fa-circle-xmark"></i>
+                                                            {{Session::get('newsletter-subscription-failed')}}
+                                                        </div>
+                                                    @endif
+                                                </div>
+                                            </div>
+
+                                            <div class="row pt-3 pb-3">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center">
+                                                    <button type="submit" class="btn btn-success subscribeButton">subscribe</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    @elseif (Auth::check() && Auth::user()->system_role === 'standard-user')
+                                        <form action="{{route('standardUserNewsletter')}}" method="POST" role="form" accept-charset="UTF-8" enctype="multipart/form-data">
+                                            @csrf
+
+                                            <div class="row pt-3 pb-3">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                                    <input type="hidden" name="user_id" class="form-control @error('user_id') is-invalid @enderror" value="{{ auth()->check() && auth()->user()->id }}">
+
+                                                    @error('user_id')
+                                                        <span class="invalid-feedback alert alert-warning" role="alert">
+                                                            <strong class="text-danger"><i class="fa-solid fa-circle-exclamation"></i>{{$message}}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="row pt-3 pb-3">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                                    <input type="email" name="subscription_email" class="form-control @error('subscription_email') is-invalid @enderror" id="inputSubscriptionEmail" value="{{old('subscription_email')}}" minlength="3" maxlength="50" placeholder="Email" autocomplete="subscription_email" autofocus>
+
+                                                    @error('subscription_email')
+                                                        <span class="invalid-feedback alert alert-warning" role="alert">
+                                                            <strong class="text-danger"><i class="fa-solid fa-circle-exclamation"></i>{{$message}}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                                    @if(Session::has('newsletter-subscription-successfull'))
+                                                        <div class="alert alert-success alert-dismissible fade show">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                                            <i class="fa-solid fa-circle-check"></i>
+                                                            {{Session::get('newsletter-subscription-successfull')}}
+                                                        </div>
+                                                    @elseif(Session::has('newsletter-subscription-failed'))
+                                                        <div class="alert alert-danger alert-dismissible fade show">
+                                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                                            <i class="fa-solid fa-circle-xmark"></i>
+                                                            {{Session::get('newsletter-subscription-failed')}}
+                                                        </div>
+                                                    @endif
+                                                </div>
+                                            </div>
+
+                                            <div class="row pt-3 pb-3">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-center">
+                                                    <button type="submit" class="btn btn-success subscribeButton">subscribe</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    @endif
+                                </div>
+                                <div class="modal-footer"></div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
 
@@ -325,6 +382,7 @@
     window.addEventListener('load', cardsSwiper);
     window.addEventListener('load', circularText);
     window.addEventListener('load', circularTextFooter);
+    window.addEventListener('load', newsletterModalForm);
     window.addEventListener('scroll', reveal);
     window.addEventListener('scroll', topReveal);
     window.addEventListener('scroll', leftReveal);
@@ -492,6 +550,57 @@
             } else {
                 reveals[i].classList.remove("active");
             }
+        }
+    }
+
+    //Start of function responsible for showing the newsletter modal form
+    function newsletterModalForm() {
+        setTimeout(function() {
+            $('#newsletterModalForm').modal('show');
+        }, 5000);
+    }
+
+    //Start of function responsible for bringing the book masterclass modal form to the foreground
+    function bookMasterclassModalForm() {
+        $('#bookMasterClassModalForm').appendTo("body").modal('show');
+        //$('#bookMasterClassModalForm').appendTo("body");
+    }
+
+    //Start of function that calculates the age
+    function ageCalc() {
+        var birthDateInput = document.getElementById("inputDateOfBirth").value;
+        var date = new Date();
+
+        //Convert user input value into date object
+        var birthDate = new Date(birthDateInput);
+        //Get difference between current date and birth date
+        var difference = Date.now() - birthDate.getTime();
+        var ageDate = new Date(difference);
+        var calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+        document.getElementById("inputAge").value = calculatedAge;
+    }
+
+    //Start of function that generates the random apprentice id
+    function ApprenticeID() {
+        //Returns a random integer from 0 to 1,000,000,000
+        var random_apprentice_id = document.getElementById("inputApprenticeId");
+        random_apprentice_id.value = Math.floor(Math.random() * 1000000001);
+    }
+
+    //Start of function that reveals the amount to be paid for the product course chosen/selected
+    function productCourseAmount() {
+        var productCourse = document.getElementById("inputProductCourse");
+        var amount = document.getElementById("inputAmount");
+
+        if (productCourse.value === 'Pastry') {
+            amount.value = '10000';
+        } else if (productCourse.value === 'Bread') {
+            amount.value = '8000';
+        } else if (productCourse.value === 'Decoration') {
+            amount.value = '3000';
+        } else {
+            amount.value = '0';
         }
     }
 

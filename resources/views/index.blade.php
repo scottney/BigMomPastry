@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('guest-content')
 
 <section id="top-content">
 	<div class="row">
@@ -21,56 +21,56 @@
 					<div class="carousel-item active">
 						<img src="{{url('/images/pastry.jpg')}}" class="main-slide-images" alt="pastry">
 						<div class="carousel-caption">
-							<h5 class="display-5 text-white text-center main-slide-text" id="">PASTRY AND CONFECTIONERY</h5>
+							<h5 class="display-6 text-white text-center main-slide-text" id="">PASTRY AND CONFECTIONERY</h5>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<img src="{{url('/images/cakes/cake.jpg')}}" class="main-slide-images" alt="Cakes">
 						<div class="carousel-caption">
-							<h5 class="display-5 text-white text-center main-slide-text" id="">CAKES</h5>
+							<h5 class="display-6 text-white text-center main-slide-text" id="">CAKES</h5>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<img src="{{url('/images/buns/buns.jpg')}}" class="main-slide-images" alt="Buns">
 						<div class="carousel-caption">
-							<h5 class="display-5 text-white text-center main-slide-text" id="">BUNS</h5>
+							<h5 class="display-6 text-white text-center main-slide-text" id="">BUNS</h5>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<img src="{{url('/images/doughnuts/doughnuts.jpg')}}" class="main-slide-images" alt="Doughnuts">
 						<div class="carousel-caption">
-							<h5 class="display-5 text-white text-center main-slide-text" id="">DOUGHNUTS</h5>
+							<h5 class="display-6 text-white text-center main-slide-text" id="">DOUGHNUTS</h5>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<img src="{{url('/images/pizza/pizza.jpg')}}" class="main-slide-images" alt="Pizza">
 						<div class="carousel-caption">
-							<h5 class="display-5 text-white text-center main-slide-text" id="">PIZZA</h5>
+							<h5 class="display-6 text-white text-center main-slide-text" id="">PIZZA</h5>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<img src="{{url('/images/swiss-roll/swiss-roll.jpg')}}" class="main-slide-images" alt="Swiss Roll">
 						<div class="carousel-caption">
-							<h5 class="display-5 text-white text-center main-slide-text" id="">SWISS ROLL</h5>
+							<h5 class="display-6 text-white text-center main-slide-text" id="">SWISS ROLL</h5>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<img src="{{url('/images/croissants/croissants.jpg')}}" class="main-slide-images" alt="Croissants">
 						<div class="carousel-caption">
-							<h5 class="display-5 text-white text-center main-slide-text" id="">CROISSANTS</h5>
+							<h5 class="display-6 text-white text-center main-slide-text" id="">CROISSANTS</h5>
 						</div>
 					</div>
 
 					<div class="carousel-item">
 						<img src="{{url('/images/canele/canele.jpg')}}" class="main-slide-images" alt="Canele">
 						<div class="carousel-caption">
-							<h5 class="display-5 text-white text-center main-slide-text" id="">CANELE</h5>
+							<h5 class="display-6 text-white text-center main-slide-text" id="">CANELE</h5>
 						</div>
 					</div>
 				</div>
@@ -103,7 +103,7 @@
 
 		<div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8 p-5">
 			<div class="motto topReveal">
-				<h5 class="display-3 text-white text-center logo-area-text">Live the sweet life...</h5>
+				<h5 class="display-5 text-white text-center logo-area-text">Live the sweet life...</h5>
 			</div>
 		</div>
 	</div>
@@ -114,7 +114,7 @@
 		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-					<h5 class="display-3 text-white text-center pt-5 products-header-text">PRODUCTS</h5>
+					<h5 class="display-5 text-white text-center p3-5 products-header-text">PRODUCTS</h5>
 				</div>
 			</div>
 		</div>
@@ -126,7 +126,7 @@
 		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-					<h5 class="display-3 text-white text-center pt-5 blog-header-text">BLOG</h5>
+					<h5 class="display-5 text-white text-center pt-3 blog-header-text">BLOG</h5>
 				</div>
 			</div>
 		</div>
@@ -138,7 +138,7 @@
 		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-					<h5 class="display-3 text-white text-center pt-5 operations-header-text">OPERATIONS</h5>
+					<h5 class="display-5 text-white text-center pt-3 operations-header-text">OPERATIONS</h5>
 				</div>
 			</div>
 
@@ -233,26 +233,26 @@
 
 			<div class="row" id="sales-counter">
 	            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
-	                <div class=""><i class="fa fa-clock fa-5x text-white"></i></div>
-	                <p class="text-white counter" style="font-size: 60px;">250</p>
+	                <div class=""><i class="fa fa-clock fa-3x text-white"></i></div>
+	                <p class="text-white counter" style="font-size: 30px;">250</p>
 	                <p class="text-white" style="font-size: 24px;"><b>Working Hours</b></p>
 	            </div>
 
 	            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
-	                <div class=""><i class="fas fa-shopping-bag fa-5x text-white"></i></div>
-	                <p class="text-white counter" style="font-size: 60px;">1000</p>
+	                <div class=""><i class="fas fa-shopping-bag fa-3x text-white"></i></div>
+	                <p class="text-white counter" style="font-size: 30px;">1000</p>
 	                <p class="text-white" style="font-size: 24px;"><b>Orders</b></p>
 	            </div>
 
 	            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
-	                <div class=""><i class="fas fa-shipping-fast fa-5x text-white"></i></div>
-	                <p class="text-white counter" style="font-size: 60px;">3000</p>
+	                <div class=""><i class="fas fa-shipping-fast fa-3x text-white"></i></div>
+	                <p class="text-white counter" style="font-size: 30px;">3000</p>
 	                <p class="text-white" style="font-size: 24px;"><b>Delivered Pieces</b></p>
 	            </div>
 
 	            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
-	                <div class=""><i class="fas fa-store-alt fa-5x text-white"></i></div>
-	                <p class="text-white counter" style="font-size: 60px;">10</p>
+	                <div class=""><i class="fas fa-store-alt fa-3x text-white"></i></div>
+	                <p class="text-white counter" style="font-size: 30px;">10</p>
 	                <p class="text-white" style="font-size: 24px;"><b>Outlets</b></p>
 	            </div>
 	        </div>
@@ -263,7 +263,7 @@
 <section id="about-us-area">
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-			<h5 class="display-3 text-white text-center pt-5 about-us-header-text">ABOUT US</h5>
+			<h5 class="display-5 text-white text-center pt-3 about-us-header-text">ABOUT US</h5>
 		</div>
 	</div>
 
@@ -312,13 +312,13 @@
 
 	<div class="row p-3 shade">
 		<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-			<i class="fa-solid fa-hand-holding-heart fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="" class=" p-1" id="aboutUsLinkText">OUR VALUES</a></i><br>
+			<i class="fa-solid fa-hand-holding-heart fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="{{route('ourValues')}}" class=" p-1" id="aboutUsLinkText" target="_blank">OUR VALUES</a></i><br>
 
 			<i class="fa-solid fa-basket-shopping fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="" class=" p-1" id="aboutUsLinkText">FIND A BIGMOMPASTRY OUTLET</a></i>
 		</div>
 
 		<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-			<i class="fa-solid fa-book-open fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="" class=" p-1" id="aboutUsLinkText">BOOK A MASTERCLASS</a></i><br>
+			<i class="fa-solid fa-book-open fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="{{route('MasterclassIndex')}}" class=" p-1" id="aboutUsLinkText">BOOK A MASTERCLASS</a></i><br>
 
 			<i class="fa-solid fa-shop fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="" class=" p-1" id="aboutUsLinkText">BIGMOMPASTRY KENYA</a></i>
 		</div>
@@ -334,7 +334,7 @@
 <section id="contacts-area">
 	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-			<h5 class="display-3 text-white text-center pt-5 contacts-header-text">CONTACTS</h5>
+			<h5 class="display-5 text-white text-center pt-3 contacts-header-text">CONTACTS</h5>
 		</div>
 	</div>
 

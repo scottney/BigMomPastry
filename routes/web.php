@@ -25,6 +25,12 @@ Route::group(['middleware' => ['Xss']], function() {
         //Route that posts guests newsletter subscriptions to the database
         Route::post('/', [App\Http\Controllers\NewsletterController::class, 'newsletterPost'])->name('guestNewsletter');
 
+        //Route that redirects to the Our Values page
+        Route::get('/about us/our values', [App\Http\Controllers\PagesController::class, 'values'])->name('ourValues');
+
+        //Route that redirects to the BookMasterclass page
+        Route::get('/about us/masterclass', [App\Http\Controllers\PagesController::class, 'bookMasterclassIndex'])->name('MasterclassIndex');
+
     });
 
     //End of Guest Middleware Protection

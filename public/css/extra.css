@@ -8,6 +8,7 @@
 	position: fixed;
 	z-index: 2;
 	width: 100%;
+	border: 1px solid #FFFFFF;
 }
 
 /* Removes padding */
@@ -18,7 +19,11 @@
 /* Styles all text giving a unique font to it */
 .styled-text {
 	font-family: 'Italianno', cursive;
-	font-size: 30px;
+	font-size: 22px;
+}
+
+.styled-text:hover {
+	cursor: pointer;
 }
 
 /* Styles the navbar logo */
@@ -29,6 +34,10 @@
 }
 
 /* Styles the navbar links */
+.bottom-style-active {
+	border-bottom: 1px solid #FFA500;
+}
+
 .bottom-style:hover {
 	border-bottom: 1px solid #FFA500;
 }
@@ -74,7 +83,7 @@
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 25px;
 	font-family: 'Italianno', cursive;
-	font-weight: 600;
+	font-weight: 300;
 	animation: fadeIn linear 3s;
 	-webkit-animation: fadeIn linear 3s;
   	-moz-animation: fadeIn linear 3s;
@@ -558,6 +567,12 @@
 	border: 1px solid white;
 }
 
+.newsletterImage {
+	width: 100px;
+	height: 50px;
+	border-radius: 25px;
+}
+
 .textFooter {
 	font-family: serif, sans-serif;
 	font-size: 18px;
@@ -569,13 +584,22 @@
 	text-decoration: underline;
 }
 
+.footerUniqueText {
+	font-family: serif, sans-serif;
+	font-size: 14px;
+}
+
+.footerUniqueBorderBottom {
+	border-bottom: 1px solid #FFFFFF;
+}
+
 .paymentIcon {
 	width: 75px;
 	height: 50px;
 	border-radius: 15px;
 }
 
-.subscribeButton, .resetButton, .registerButton, .loginButton, .resetPasswordButton {
+.subscribeButton, .resetButton, .registerButton, .loginButton, .resetPasswordButton, .submitButton {
 	font-family: serif, sans-serif;
 	font-size: 12px;
 	font-weight: 175;
@@ -584,17 +608,17 @@
 	border-radius: 25px;
 }
 
-#inputSubscriptionEmail, #inputName, #inputEmail, #inputPassword, #inputPasswordConfirm, #inputSystemRole{
+#inputSubscriptionEmail, #inputName, #inputEmail, #inputPassword, #inputPasswordConfirm{
 	border-radius: 15px;
 	width: 100%;
 }
 
-#inputSubscriptionEmail:hover, #inputName:hover, #inputEmail:hover, #inputPassword:hover, #inputPasswordConfirm:hover, #inputSystemRole:hover {
+#inputSubscriptionEmail:hover, #inputName:hover, #inputEmail:hover, #inputPassword:hover, #inputPasswordConfirm:hover {
 	background: #FF8000;
 	cursor: pointer;
 }
 
-#inputSubscriptionEmail:focus, #inputName:focus, #inputEmail:focus, #inputPassword:focus, #inputPasswordConfirm:focus, #inputSystemRole:focus {
+#inputSubscriptionEmail:focus, #inputName:focus, #inputEmail:focus, #inputPassword:focus, #inputPasswordConfirm:focus {
 	background: #FFCC99;
 }
 
@@ -630,6 +654,133 @@
 	cursor: pointer;
 }
 
+/* Styles the sub menu text */
+#aboutUsDropDownItems:hover {
+	background: #000;
+}
+
+#aboutUsDropDownItems:focus {
+	background: #000;
+}
+
+.ourValuesCardsIcons, .masterClassCardsIcons {
+	color: #FFA500;
+}
+
+.ourValuesHeaderText, .masterClassHeaderText {
+	font-family: 'Italianno', cursive;
+	font-size: 36px;
+	text-decoration: underline;
+}
+
+.ourValuesBodyText, .masterClassBodyText {
+	font-family: 'Italianno', cursive;
+	font-size: 36px;
+	text-indent: 25px;
+}
+
+.ourValuesTopContent, .masterClassTopContent {
+	margin-top: 5%;
+}
+
+.ourValuesSlidesImages, .masterClassSlidesImages {
+	width: 100%;
+}
+
+.ourValuesSlidesText, .masterClassSlidesText {
+	margin-bottom: 15%;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 25px;
+	font-family: 'Italianno', cursive;
+	font-weight: 300;
+	animation: fadeIn linear 3s;
+	-webkit-animation: fadeIn linear 3s;
+  	-moz-animation: fadeIn linear 3s;
+  	-o-animation: fadeIn linear 3s;
+  	-ms-animation: fadeIn linear 3s;
+}
+
+#ourValuesCard:hover, #masterClassCard:hover {
+	box-shadow: 2px 4px 2px 4px #FFFFFF;
+}
+
+.ourValuesCardHeaderText, .masterClassCardHeaderText {
+	text-decoration: underline;
+	font-family: 'Italianno', cursive;
+	font-size: 30px;
+}
+
+.ourValuesCardBodyText, .masterClassCardBodyText {
+	text-indent: 50px;
+	padding: 10px;
+}
+
+.ourValuesCardFooterText, .masterClassCardFooterText {
+	color: #FFFFFF;
+}
+
+.ourValuesCardFooterText:hover, .masterClassCardFooterText:hover {
+	color: #FFA500;
+}
+
+.ourValuesSectionHeaderText {
+	font-family: 'Italianno', cursive;
+	text-decoration: underline;
+	text-indent: 10%;
+}
+
+.ourValuesSectionContentText, .masterClassHeaderInfoText, .ourValuesHeaderInfoText {
+	font-family: serif, sans-serif;
+	font-size: 16px;
+	text-indent: 7%;
+}
+
+.bookMasterClassLinkIcon {
+	color: #FFA500;
+	padding: 5%;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+.bookMasterClassLink {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 2%;
+	font-family: serif, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.bookMasterClassLink:hover {
+	color: #FFA500;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.bookMasterclassFormText {
+	color: #FFFFFF;
+	font-family: serif, sans-serif;
+	font-size: 16px;
+}
+
+#inputId, #inputSystemRole, #inputFirstName, #inputSurname, #inputMiddleName, #inputIdNumber, #inputDateOfBirth, #inputAge, #inputPhoneNumber, #inputEmail, 
+#inputPlaceOfResidence, #inputApprenticeId, #inputApprenticeSession, #inputPaymentMode, #inputProductCourse, #inputAmount {
+	border-radius: 15px;
+	width: 100%;
+}
+
+#inputId:hover, #inputSystemRole:hover, #inputFirstName:hover, #inputSurname:hover, #inputMiddleName:hover, #inputIdNumber:hover, #inputDateOfBirth:hover, 
+#inputAge:hover, #inputPhoneNumber:hover, #inputEmail:hover, #inputPlaceOfResidence:hover, #inputApprenticeId:hover, #inputApprenticeSession:hover, 
+#inputPaymentMode:hover, #inputProductCourse:hover, #inputAmount:hover {
+	background: #FF8000;
+	cursor: pointer;
+}
+
+#inputId:focus, #inputSystemRole:focus, #inputFirstName:focus, #inputSurname:focus, #inputMiddleName:focus, #inputIdNumber:focus, #inputDateOfBirth:focus, 
+#inputAge:focus, #inputPhoneNumber:focus, #inputEmail:focus, #inputPlaceOfResidence:focus, #inputApprenticeId:focus, #inputApprenticeSession:focus, 
+#inputPaymentMode:focus, #inputProductCourse:focus, #inputAmount:focus {
+	background: #FFCC99;
+}
 
 
 
