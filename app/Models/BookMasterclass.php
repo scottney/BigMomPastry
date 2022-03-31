@@ -17,6 +17,7 @@ class BookMasterclass extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+        'user_id',
         'first_name',
         'surname',
         'middle_name',

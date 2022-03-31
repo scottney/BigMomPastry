@@ -23,13 +23,25 @@ Route::group(['middleware' => ['Xss']], function() {
         Route::get('/', [App\Http\Controllers\PagesController::class, 'index'])->name('index');
 
         //Route that posts guests newsletter subscriptions to the database
-        Route::post('/', [App\Http\Controllers\NewsletterController::class, 'newsletterPost'])->name('guestNewsletter');
+        Route::post('/pages/guest/user/newsletter', [App\Http\Controllers\NewsletterController::class, 'newsletterPost'])->name('guestNewsletter');
 
-        //Route that redirects to the Our Values page
-        Route::get('/about us/our values', [App\Http\Controllers\PagesController::class, 'values'])->name('ourValues');
+        //Route that redirects to the AboutUs page for guest users
+        Route::get('/pages/about/us/about us', [App\Http\Controllers\PagesController::class, 'aboutUs'])->name('aboutUsIndex');
 
-        //Route that redirects to the BookMasterclass page
-        Route::get('/about us/masterclass', [App\Http\Controllers\PagesController::class, 'bookMasterclassIndex'])->name('MasterclassIndex');
+        //Route that redirects to the Our Values page for geust users
+        Route::get('/pages/about us/our values', [App\Http\Controllers\PagesController::class, 'values'])->name('ourValues');
+
+        //Route that redirects to the guest book masterclass page
+        Route::get('/pages/about us/masterclass', [App\Http\Controllers\PagesController::class, 'bookMasterclassIndex'])->name('MasterclassIndex');
+
+        //Route that redirects to the guest book masterclass form page
+        Route::get('/pages/about us/book master/class/book/masterclass', [App\Http\Controllers\PagesController::class, 'bookMasterclassForm'])->name('MasterclassForm');
+
+        //Route that posts the guests book a masterclass form content to the database
+        Route::post('/pages/about us/book master/class/book/masterclass', [App\Http\Controllers\PagesController::class, 'bookMasterclass'])->name('Masterclass');
+
+        //Route that redirects to the sustainability at bigmompastry page
+        Route::get('/pages/about/us/pages/sustainability', [App\Http\Controllers\PagesController::class, 'bigMomSustainabilityIndex'])->name('sustainability');
 
     });
 
@@ -52,7 +64,7 @@ Route::group(['middleware' => ['Xss']], function() {
                 Route::group(['middleware' => ['standard']], function() {
 
                     //Route that posts guests newsletter subscriptions to the database
-                    Route::post('/home', [App\Http\Controllers\NewsletterController::class, 'newsletterPost'])->name('standardUserNewsletter');
+                    Route::post('/pages/standard/user/newsletter', [App\Http\Controllers\NewsletterController::class, 'newsletterPost'])->name('standardUserNewsletter');
 
                     //Route responsible for redirecting to the landing page after logging In and verifying the email
                     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

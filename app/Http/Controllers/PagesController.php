@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\BookMasterclass;
 
 class PagesController extends Controller
 {
@@ -16,29 +17,40 @@ class PagesController extends Controller
         return view("index");
     }
 
+    //Function responsible for redirecting to the aboutUs page
+    protected function aboutUs() {
+        return view("pages.about_us_pages.aboutUs");
+    }
+
     //Function responsible for redirecting to the Our Values page
     protected function values() {
         return view("pages.about_us_pages.values");
     }
 
-    //Function responsible for redirecting to the Book Masterclass page
+    //Function responsible for redirecting to the Book Masterclass Index page
     protected function bookMasterclassIndex() {
         return view("pages.about_us_pages.masterclass");
     }
 
+    //Function responsible for redirecting to the Book Masterclass form page
+    protected function bookMasterclassForm() {
+        return view("pages.about_us_pages.book_master_class.book_masterclass");
+    }
+
     //Function responsible for posting the Book Masterclass form content to the database
-    protected function bookMasterclassIndex(Request $request) {
+    protected function bookMasterclass(Request $request) {
         $data = $request->validate([
             'first_name' => ['required', 'string', 'min:1', 'max:19'],
             'surname' => ['required', 'string', 'min:1', 'max:19'],
             'middle_name' => ['required', 'string', 'min:1', 'max:19'],
-            'id_number' => ['required', 'integer', 'min:8', 'max:8'],
+            'id_number' => ['required', 'integer'],
             'date_of_birth' => ['required', 'date'],
             'age' => ['required', 'integer'],
             'phone_number' => ['required', 'digits:10'],
             'email' => ['required', 'email'],
             'place_of_residence' => ['required', 'string', 'min:3', 'max:49'],
-            'apprentice_id' => ['required', 'digits', 'unique:book_masterclass', 'min:3', 'max:1000000001'],
+            'apprentice_id' => ['required', 'integer', 'unique:book_masterclass', 'min:3', 'max:1000000001'],
+            'user_id' => ['integer'],
             'apprentice_session' => ['required', 'string'],
             'product_course' => ['required', 'string'],
             'payment_mode' => ['required', 'string'],
@@ -46,7 +58,7 @@ class PagesController extends Controller
         ]);
 
         if ($data) {
-            $booMasterclass = BookMaterclass::create([
+            $bookMasterclass = BookMasterclass::create([
                 'first_name' => $request->input('first_name'),
                 'surname' => $request->input('surname'),
                 'middle_name' => $request->input('middle_name'),
@@ -57,18 +69,24 @@ class PagesController extends Controller
                 'email' => $request->input('email'),
                 'place_of_residence' => $request->input('place_of_residence'),
                 'apprentice_id' => $request->input('apprentice_id'),
+                'user_id' => $request->input('user_id'),
                 'apprentice_session' => $request->input('apprentice_session'),
                 'product_course' => $request->input('product_course'),
                 'payment_mode' => $request->input('payment_mode'),
                 'amount' => $request->input('amount'),
             ]);
 
-            if ($booMasterclass) {
-                return redirect()->back()->with('book-masterclass-successfull', 'Congratulations, you have successfully booked a masterclass');
+            if ($bookMasterclass) {
+                return redirect()->route('MasterclassIndex')->with('book-masterclass-successfull', 'Congratulations, you have successfully booked a masterclass. Please visit your email address to complete your booking by updating your receipt number.');
             } else {
                 return redirect()->back()->with('book-masterclass-failed', 'Operation failed. Please try again later');
             }
         }
+    }
+
+    //Function responsible for redirecting to the sustainability at bigmompastry page
+    protected function bigMomSustainabilityIndex() {
+        return view('pages.about_us_pages.sustainability');
     }
 
 

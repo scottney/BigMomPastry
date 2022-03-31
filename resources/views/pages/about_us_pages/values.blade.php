@@ -3,7 +3,7 @@
 @section('guest-content')
 
 <section id="our-values-area">
-    <div class="row pt-3 ourValuesTopContent">
+    <div class="row pt-3 pb-3 ourValuesTopContent">
         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
             <h5 class="text-white text-center ourValuesHeaderText">Our Values</h5>
 
@@ -45,13 +45,9 @@
         </div>
     </div>
 
-    <div class="row pt-5">
-        <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+    <div class="row pt-5 darkShade">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <h5 class="text-white text-center ourValuesBodyText">Our customers/clients inspire us to source and develop the right products to be enjoyed everyday. Their health, lifestyle and enjoyment is our priority.</h5>
-        </div>
-
-        <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <!-- Separator between right margin and section text content -->
         </div>
     </div>
 
@@ -153,7 +149,7 @@
                 </div>
 
                 <div class="card-footer d-flex justify-content-center">
-                    <a class="ourValuesCardFooterText" href="#"><i class="fa-solid fa-circle-right fa-1x ourValuesCardsIcons" id=""></i>{{ __('Go to Sustainability At BigMomPastry') }}</a>
+                    <a class="ourValuesCardFooterText" href="{{route('sustainability')}}"><i class="fa-solid fa-circle-right fa-1x ourValuesCardsIcons" id=""></i>{{ __('Go to Sustainability At BigMomPastry') }}</a>
                 </div>
             </div>
         </div>

@@ -15,12 +15,13 @@ class CreateBookMasterclassTable extends Migration
     {
         Schema::create('book_masterclass', function (Blueprint $table) {
             $table->bigincrements('id')->unsignedBigInteger();
+            $table->unsignedBigInteger('user_id')->index()->unique()->nullable();
             $table->unsignedBigInteger('apprentice_id')->index()->unique();
             $table->string('first_name');
             $table->string('surname');
             $table->string('middle_name');
             $table->unsignedBigInteger('id_number')->index();
-            $table->integer('receipt_number')->unique();
+            $table->integer('receipt_number')->unique()->nullable();
             $table->date('date_of_birth');
             $table->integer('age');
             $table->string('phone_number');
@@ -31,6 +32,11 @@ class CreateBookMasterclassTable extends Migration
             $table->string('payment_mode');
             $table->integer('amount');
             $table->timestamps();
+
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
         });
     }
 

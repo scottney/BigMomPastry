@@ -22,6 +22,61 @@
 	font-size: 22px;
 }
 
+.sweetToothHeaderText {
+	font-family: 'Italianno', cursive;
+	text-decoration: underline;
+}
+
+.sweetToothMiniText {
+	font-family: serif, sans-serif;
+	text-indent: 55px;
+	font-size: 18px;
+}
+
+.homePageCards {
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.homePageCards:hover {
+	cursor: pointer;
+	box-shadow: 4px 8px 4px 8px orange;
+}
+
+.homePageCardsTitle {
+	color: #FFFFFF;
+	font-family: 'Italianno', cursive;
+	font-size: 26px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+.homePageCardsIcon {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.homePageCardsIcon:hover {
+	color: orange;
+}
+
+.homePageIconCards {
+	color: orange;
+}
+
+.pastryCardImage, .confectioneryCardImage, .drinksCardImage, .fastFoodsCardImage, .saladsCardImage {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
 .styled-text:hover {
 	cursor: pointer;
 }
@@ -46,6 +101,16 @@
 .background-style:hover {
 	background: linear-gradient(to left, black, orange);
 	border-radius: 50%;
+}
+
+/* Enables the dropmenu to drop automatically on hover */
+.aboutUsDrop:hover .aboutUsMenu, .myAccountDrop:hover .myAccountMenu{
+	display: block;
+}
+
+/* Enables the background color of the dropmenu to change when active */
+.aboutUsDrop:hover .aboutUsDropMenu {
+	background: linear-gradient(to left, black, orange);
 }
 
 /* Styles the main slide */
@@ -188,8 +253,86 @@
 /* Start of logo area styling */
 .logo-area-text {
 	font-family: 'Italianno', cursive;
-	text-decoration: underline;
 	margin-top: 8%;
+}
+
+.ourCursor {
+	display: inline-block;
+	width: 3px;
+	background: #FFFFFF;
+	margin-left: 0.1rem;
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	0% {
+		background: #FFFFFF;
+	}
+
+	49% {
+		background: #FFFFFF;
+	}
+
+	50% {
+		background: transparent;
+	}
+
+	99% {
+		background: transparent;
+	}
+
+	100% {
+		background: #FFFFFF;
+	}
+}
+
+.typing {
+	animation: none;
+}
+
+/* Start Of Styling For Pastry And Confectionery For All Occasions and Testimonials */
+.occasionsTitleText, .testimonialHeaderText, .customersTestimonialHeaderText, .employeesTestimonialHeaderText {
+	font-family: 'Italianno', cursive;
+	text-decoration: underline;
+}
+
+.occasionsContentText {
+	text-indent: 20%;
+}
+
+#homePageSlide1 {
+	background: url('/images/swiper-images/homepage/romance-2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#homePageSlide2 {
+	background: url('/images/swiper-images/homepage/gestation.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#homePageSlide3 {
+	background: url('/images/swiper-images/homepage/baby.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#homePageSlide4 {
+	background: url('/images/swiper-images/homepage/birthday.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#homePageSlide5 {
+	background: url('/images/swiper-images/homepage/special.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /* Start of products, blog and operations area styling */
@@ -202,6 +345,10 @@
 	font-family: 'Italianno', cursive;
 }
 
+.about-us-header-text {
+	text-decoration: underline;
+}
+
 .about-us-content-text {
 	font-family: 'Italianno', cursive;
 	font-size: 32px;
@@ -210,13 +357,14 @@
 
 .swiper-container {
     width: 100%;
+    overflow: hidden;
 }
 
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 375px;
-    height: 375px;
+    width: 275px;
+    height: 275px;
     background: #000;
     -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #0006);
 }
@@ -329,7 +477,6 @@
 
 .slide-cards-header-text {
 	font-family: 'Italianno', cursive;
-	font-size: 42px;
 	font-weight: 325;
 	margin-left: -25%;
 	top: 25%;
@@ -339,11 +486,12 @@
 
 .slide-cards-text {
 	font-family: 'Italianno', cursive;
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 325;
 	margin-left: -25%;
 	top: 40%;
 	position: absolute;
+	text-indent: 12%;
 }
 
 #sales-counter {
@@ -359,6 +507,27 @@
 }
 
 /* Start of About Us Styling */
+.aboutUsMainImage {
+	width: 100%;
+	background: url('/images/swiper-images/aboutUs/aboutUs.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.startFlavours {
+	width: 55%;
+	padding-left: 5%;
+}
+
+.bg-flavours {
+	background: linear-gradient(to right, black, orange);
+}
+
+.aboutUsSpecialContainer {
+	width: 55%;
+}
+
 .wordCarousel {
 	font-size: 22px;
 	font-family: serif, sans-serif;
@@ -439,6 +608,7 @@
 #aboutUsScrollTextLink:hover {
 	border-left: 1px solid orange;
 	color: #FFA500;
+	text-decoration: underline;
 }
 
 #aboutUsLinkText {
@@ -667,7 +837,7 @@
 	color: #FFA500;
 }
 
-.ourValuesHeaderText, .masterClassHeaderText {
+.ourValuesHeaderText, .masterClassHeaderText, .apprenticeHeaderText, .sustainabilityHeaderText {
 	font-family: 'Italianno', cursive;
 	font-size: 36px;
 	text-decoration: underline;
@@ -679,15 +849,15 @@
 	text-indent: 25px;
 }
 
-.ourValuesTopContent, .masterClassTopContent {
+.ourValuesTopContent, .masterClassTopContent, .sustainabilityTopContent {
 	margin-top: 5%;
 }
 
-.ourValuesSlidesImages, .masterClassSlidesImages {
+.ourValuesSlidesImages, .masterClassSlidesImages, .sustainabilitySlidesImages {
 	width: 100%;
 }
 
-.ourValuesSlidesText, .masterClassSlidesText {
+.ourValuesSlidesText, .masterClassSlidesText, .sustainabilitySlidesText {
 	margin-bottom: 15%;
 	background: rgb(0, 0, 0);
 	background: rgba(0, 0, 0, 0.5);
@@ -736,13 +906,6 @@
 	text-indent: 7%;
 }
 
-.bookMasterClassLinkIcon {
-	color: #FFA500;
-	padding: 5%;
-	border: 1px solid #FFFFFF;
-	border-radius: 50%;
-}
-
 .bookMasterClassLink {
 	color: #FFFFFF;
 	text-decoration: none;
@@ -757,10 +920,62 @@
 	border-bottom: 1px solid #FFFFFF;
 }
 
+.bookMasterClassLinkIcon {
+	color: #FFA500;
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
 .bookMasterclassFormText {
 	color: #FFFFFF;
 	font-family: serif, sans-serif;
 	font-size: 16px;
+}
+
+.bookMasterClassImage {
+	width: 100%;
+	height: auto;
+}
+
+.bookMasterCardImage {
+	width: 100%;
+	height: 275px;
+	background: url('/images/cupcakes/cupcakes-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bookMasterCardImage-1 {
+	width: 100%;
+	height: 275px;
+	background: url('/images/buns/buns.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bookMasterCardImage-2 {
+	width: 100%;
+	height: 275px;
+	background: url('/images/decoration.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.darkShade {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.apprenticeCardText {
+	color: #FFFFFF;
+	font-family: 'Italianno', cursive;
+	font-size: 32px;
+	margin-top: 25%;
+	text-transform: uppercase;
 }
 
 #inputId, #inputSystemRole, #inputFirstName, #inputSurname, #inputMiddleName, #inputIdNumber, #inputDateOfBirth, #inputAge, #inputPhoneNumber, #inputEmail, 
@@ -781,6 +996,8 @@
 #inputPaymentMode:focus, #inputProductCourse:focus, #inputAmount:focus {
 	background: #FFCC99;
 }
+
+
 
 
 

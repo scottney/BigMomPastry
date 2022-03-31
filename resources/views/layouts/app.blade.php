@@ -84,33 +84,34 @@
                                 <!-- Left Side Of Navbar -->
                                 <ul class="navbar-nav me-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#products-area">{{ __('Products') }}</a>
+                                        <a class="nav-link text-white styled-text bottom-style" href="#"><i class="fa-solid fa-cake-candles fa-1x"></i>{{ __('Products') }}</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#blog-area">{{ __('Blog') }}</a>
+                                        <a class="nav-link text-white styled-text bottom-style" href="#">{{ __('Blog') }}</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#operations-area">{{ __('Operations') }}</a>
+                                        <a class="nav-link text-white styled-text bottom-style" href="#">{{ __('Operations') }}</a>
                                     </li>
 
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle text-white styled-text bottom-style" href="#" role="button" id="aboutUsDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ __('About Us') }}</a>
+                                    <li class="nav-item dropdown aboutUsDrop">
+                                        <!-- Below item is a substitute dropdown navigation menu item for the already existing navigation menu item -->
+                                        <!--<a class="nav-link dropdown-toggle text-white styled-text bottom-style aboutUsDropMenu" href="{{route('aboutUsIndex')}}" role="button" id="aboutUsDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ __('About Us') }}</a>-->
+                                        <a class="nav-link dropdown-toggle text-white styled-text bottom-style aboutUsDropMenu" href="{{route('aboutUsIndex')}}" role="button" id="aboutUsDropDownMenu" aria-expanded="false">{{ __('About Us') }}</a>
 
-                                        <ul class="dropdown-menu bg-dark" aria-labelledby="aboutUsDropDownMenu">
-                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('index')}}#about-us-area">AboutUs Section</a></li>
+                                        <ul class="dropdown-menu bg-dark aboutUsMenu" aria-labelledby="aboutUsDropDownMenu">
                                             <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('ourValues')}}">Our Values</a></li>
                                             <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('index')}}">Learn More</a></li>
                                             <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('MasterclassIndex')}}">Book A Master Class</a></li>
                                             <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="#">Find A BigMomPastry Outlet</a></li>
-                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="#">Sustainability At BigMomPastry</a></li>
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="{{route('sustainability')}}">Sustainability At BigMomPastry</a></li>
                                             <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="#">BigMomPastryKenya</a></li>
                                         </ul>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link text-white styled-text bottom-style" href="{{route('index')}}#contacts-area">{{ __('Contacts') }}</a>
+                                        <a class="nav-link text-white styled-text bottom-style" href="#">{{ __('Contacts') }}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -121,19 +122,19 @@
                                     <!-- Authentication Links -->
                                     @guest
                                     <i class="fa-solid fa-circle-user fa-2x text-white p-2"></i>
-                                    <li class="nav-item dropdown">
-                                        <p class="dropdown-toggle pt-2 styled-text text-white accountStatusText" id="accountStatusDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ __('My Account') }}</p>
+                                    <li class="nav-item dropdown myAccountDrop">
+                                        <a class="nav-link dropdown-toggle pt-2 styled-text text-white accountStatusText" id="accountStatusDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ __('My Account') }}</a>
 
-                                        <ul class="dropdown-menu bg-dark" aria-labelledby="accountStatusDropDownMenu">
+                                        <ul class="dropdown-menu bg-dark myAccountMenu" aria-labelledby="accountStatusDropDownMenu">
                                             @if (Route::has('login'))
                                             <li class="nav-item">
-                                                <a class="nav-link dropdown-item text-white styled-text background-style" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                <a class="nav-link dropdown-item text-white styled-text background-style" href="{{ route('login') }}">{{ __('Login') }}<i class="fa-solid fa-right-to-bracket fa-1x float-end"></i></a>
                                             </li>
                                             @endif
 
                                             @if (Route::has('register'))
                                             <li class="nav-item">
-                                                <a class="nav-link dropdown-item text-white styled-text background-style" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                                <a class="nav-link dropdown-item text-white styled-text background-style" href="{{ route('register') }}">{{ __('Register') }}<i class="fa-solid fa-user-plus fa-1x float-end"></i></a>
                                             </li>
                                             @endif
                                         </ul>
@@ -209,7 +210,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                     <h5 class="display-6 text-white pt-3 styled-text textFooterUnderline">CONTACTS</h5>
 
-                    <i class="fa-solid fa-building fa-1x p-2" id="contactsIcons"><a href="" class="textFooter" id="contactsIconsLinks"><i>4489-00232, Ruiru, Acacia-Street</i></a></i><br>
+                    <i class="fa-solid fa-building fa-1x p-2" id="contactsIcons"><a href="#" class="textFooter" id="contactsIconsLinks"><i>4489-00232, Ruiru, Acacia-Street</i></a></i><br>
                     <i class="fa-solid fa-at fa-1x p-2" id="contactsIcons"><a href="mailto:bigmompastries@gmail.com" class="textFooter" id="contactsIconsLinks" target="_blank">BigMomPastry</a></i><br>
                     <i class="fa-solid fa-square-phone fa-1x p-2" id="contactsIcons"><a href="tel:+254708621963" class="textFooter" id="contactsIconsLinks" target="_blank">Phone Number</a></i><br>
                     <i class="fa-brands fa-whatsapp fa-1x p-2" id="contactsIcons"><a href="https://api.whatsapp.com/send?phone=254708621963" class="textFooter" id="contactsIconsLinks" target="_blank">Whatsapp</a></i><br>
@@ -378,6 +379,7 @@
 
     window.addEventListener('load', keyBinder);
     window.addEventListener('load', rippleEffect);
+    window.addEventListener('load', typeLogoText);
     window.addEventListener('load', numbersCounter);
     window.addEventListener('load', cardsSwiper);
     window.addEventListener('load', circularText);
@@ -410,6 +412,42 @@
         });
     }
 
+    //Script responsible for creating typewriter effect in the logo area of the landing page
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".ourCursor");
+    const textArray = ["Live the sweet life", "Experience pastry and confectionery", "The bread and butter of life", "The perfect way to start your day", "The best way to end your night", "Enrich every moment", "A sweet escape from the ordinary"];
+    const typingDelay = 200;
+    const erasingDelay = 100;
+    const newTextDelay = 2000;
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    function typeLogoText() {
+        if(charIndex < textArray[textArrayIndex].length) {
+            if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeLogoText, typingDelay);
+        } else {
+            cursorSpan.classList.remove("typing");
+            setTimeout(eraseLogoText, newTextDelay);
+        }
+    }
+
+    function eraseLogoText() {
+        if(charIndex > 0) {
+            if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+            charIndex--;
+            setTimeout(eraseLogoText, erasingDelay);
+        } else {
+            cursorSpan.classList.remove("typing");
+            textArrayIndex++;
+            if(textArrayIndex >= textArray.length) textArrayIndex = 0;
+            setTimeout(typeLogoText, typingDelay);
+        }
+    }
+
      //Start Of Counter Up Script
      function numbersCounter() {
         $(".counter").counterUp({
@@ -432,7 +470,7 @@
             speed: 6000,
             loop: true,
             coverFlowEffect: {
-                rotate: 50,
+                rotate: 150,
                 stretch: 0,
                 depth: 100,
                 modifier: 1,
@@ -558,12 +596,6 @@
         setTimeout(function() {
             $('#newsletterModalForm').modal('show');
         }, 5000);
-    }
-
-    //Start of function responsible for bringing the book masterclass modal form to the foreground
-    function bookMasterclassModalForm() {
-        $('#bookMasterClassModalForm').appendTo("body").modal('show');
-        //$('#bookMasterClassModalForm').appendTo("body");
     }
 
     //Start of function that calculates the age
