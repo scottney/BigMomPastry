@@ -116,11 +116,27 @@
 		</div>
 
 		<div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10 p-1">
-			<div class="row">		
-				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-					<h5 class="display-6 text-white p-1 sweetToothHeaderText">Satisfy Your Sweet Tooth</h5>
+			<div class="carousel slide carousel-fade" id="tastyPastry" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+								<h5 class="display-6 text-white p-1 sweetToothHeaderText">Satisfy Your Sweet Tooth</h5>
 
-					<p class="text-white p-1 sweetToothMiniText">At <b><i>BigMomPastry</i></b>, we believe that <b><i>perfection</i> is not a <i>destination</i></b> but a <i>journey</i>. So, whether it's eclairs, chocolates, bread, cakes, cookies, buns, rolls or milk shakes, <b><i>BigMomPastry</i></b> has you covered. With <strong>pastry and confectionery</strong> ranging from across multiple nationalities, our <i>chefs</i> will give you the experience of a <b><i>lifetime</i></b>.</p>
+								<p class="text-white p-1 sweetToothMiniText">At <b><i>BigMomPastry</i></b>, we believe that <b><i>perfection</i> is not a <i>destination</i></b> but a <i>journey</i>. So, whether it's eclairs, chocolates, bread, cakes, cookies, buns, rolls or milk shakes, <b><i>BigMomPastry</i></b> has you covered. With <strong>pastry and confectionery</strong> ranging from across multiple nationalities, our <i>chefs</i> will give you the experience of a <b><i>lifetime</i></b>.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="row">
+							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+								<h5 class="display-6 text-white p-1 sweetToothHeaderText">Come For The Food, Stay For The Atmosphere</h5>
+
+								<p class="text-white p-1 sweetToothMiniText">At <b>BigMomPastry</b>, <i>food</i>, <i>design</i> and <i>ambience</i> come together to create a <i>memorable sensory experience</i>.A <i>culinary</i> adventure for all the <i>senses</i>. Enjoy pure, natural, nutritious food that tastes amazing. <b>Experience</b> food and allow it to meet your <i>soul</i>.Here, we give a refined <b><i>eperience</i></b> for those who <b><i>appreciate</i></b> the finer things in <b><i>life</i></b>.
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -341,14 +357,6 @@
 
 				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-1"></div>
 			</div>
-
-			<div class="row pt-3">
-				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-					<h5 class="display-6 text-white p-1 sweetToothHeaderText">Come For The Food, Stay For The Atmosphere</h5>
-
-					<p class="text-white p-1 sweetToothMiniText">At <b>BigMomPastry</b>, <i>food</i>, <i>design</i> and <i>ambience</i> come together to create a <i>memorable sensory experience</i>.A <i>culinary</i> adventure for all the <i>senses</i>. Enjoy pure, natural, nutritious food that tastes amazing. <b>Experience</b> food and allow it to meet your <i>soul</i>.Here, we give a refined <b><i>eperience</i></b> for those who <b><i>appreciate</i></b> the finer things in <b><i>life</i></b>.
-				</div>
-			</div>
 		</div>
 
 		<div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
@@ -366,35 +374,35 @@
 
 			<div class="swiper-container pt-3 pb-3">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide" id="homePageSlide1">
+					<div class="swiper-slide homePageSlides" id="homePageSlide1">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fa-solid fa-heart"></i><b><i>Courtship</i></b></h5>
 							<p class="slide-cards-text text-white" id="">We have been there fueling the fire, fueling the romance between couples with state of the art pastry and confectionery.</p>
 						</div>
 					</div>
 
-					<div class="swiper-slide" id="homePageSlide2">
+					<div class="swiper-slide homePageSlides" id="homePageSlide2">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fa-solid fa-clock"></i><b><i>Gestation</i></b></h5>
 							<p class="slide-cards-text text-white" id="">As couples patiently wait for their bundle of joy, we have been there, serving them the best pastry and confectionery money could buy.</p>
 						</div>
 					</div>
 
-					<div class="swiper-slide" id="homePageSlide3">
+					<div class="swiper-slide homePageSlides" id="homePageSlide3">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fa-solid fa-baby"></i><b><i>The patter of tiny feet</i></b></h5>
 							<p class="slide-cards-text text-white" id="">When couples had their baby, we were there to share in their joy, by serving them the most fresh fruits and vegetables salad that money could buy.</p>
 						</div>
 					</div>
 
-					<div class="swiper-slide" id="homePageSlide4">
+					<div class="swiper-slide homePageSlides" id="homePageSlide4">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fa-solid fa-gifts"></i><b><i>Birthdays</i></b></h5>
 							<p class="slide-cards-text text-white" id="">Annually, as you celebrate your birthday, we have been there. Serving you the most affordable, best and tasty pastry.</p>
 						</div>
 					</div>
 
-					<div class="swiper-slide" id="homePageSlide5">
+					<div class="swiper-slide homePageSlides" id="homePageSlide5">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fas fa-cake"></i><b><i>Special Occasions</i></b></h5>
 							<p class="slide-cards-text text-white" id="">We have been there with you through the graduations, job promotions, marriage proposals and even at weddings. Serving you nothing but the best and finest pastry and confectionery.</p>
@@ -406,6 +414,10 @@
 			</div>
 		</div>
 	</div>
+</section>
+
+<section id="chooseSection">
+	{{-- This section is for why should you choose us section --}}
 </section>
 
 <section id="testimonialsSection">

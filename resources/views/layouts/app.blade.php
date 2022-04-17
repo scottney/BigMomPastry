@@ -50,6 +50,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- IonIcons -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionic/1.3.2/js/ionic.min.js" integrity="sha512-5jdB9QxcsPAtwIggBXAVxQj/nxncVlgg3j6kCS48u56daZ1EjyDqB5l1ZTsW6tSrFjhP4mTcLruoBJQp+8T+VQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionic/1.3.2/css/ionic.min.css" integrity="sha512-i1YfKKj5ZBPWvPKyxhmPLvAFFHnf57luvGLb/TSgta3Qgc5qzLo+jYzZAeMZk7pg82SPKn4q00vgVyCvZs+Psw==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -91,8 +94,13 @@
                                         <a class="nav-link text-white styled-text bottom-style" href="#">{{ __('Blog') }}</a>
                                     </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white styled-text bottom-style" href="#">{{ __('Operations') }}</a>
+                                    <li class="nav-item dropdown aboutUsDrop">
+                                        <a class="nav-link dropdown-toggle text-white styled-text bottom-style aboutUsDropMenu" href="#" role="button" id="aboutUsDropDownMenu" aria-expanded="false">{{ __('Operations') }}</a>
+
+                                        <ul class="dropdown-menu bg-dark aboutUsMenu" aria-labelledby="aboutUsDropDownMenu">
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="#">Gifts $ Gifting</a></li>
+                                            <li><a class="dropdown-item text-white styled-text bottom-style" id="aboutUsDropDownItems" href="#">Custom Orders</a></li>
+                                        </ul>
                                     </li>
 
                                     <li class="nav-item dropdown aboutUsDrop">
