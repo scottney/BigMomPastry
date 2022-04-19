@@ -3,14 +3,115 @@
 @section('guest-content')
 
 <section id="masterclass-area">
-	<div class="row pt-3 masterClassTopContent">
+	<div class="row pt-3 pb-3 masterClassTopContent">
         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
             <h5 class="text-white text-center masterClassHeaderText">Book A Masterclass</h5>
             <p class="text-white masterClassHeaderInfoText">Our <b>masterclass</b> has been <i>designed</i> and <i>tested</i> over time to achieve <b><i>perfection</i></b> for our trainess. Our staff have been practicing within the work environment, everything that they teach to the apprentice's. These skills, have been validated by the <b>market</b> as fit, because of the markets' response to our products.</p>
 
-            <p class="text-white masterClassHeaderInfoText">Your <b>journey</b> to becoming a <b>master baker</b> begins <i>here</i>. Book right now...</p>
+            <p class="text-white masterClassHeaderInfoText">Booking a <b>Masterclass</b> is a 5 steps process:</p>
+            <div class="carousel slide" id="bookMasterClassStepsCarouselSlide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card border bg-warning">
+                            <div class="card-header">
+                                <div class="card-title"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                        <i class="fa-solid fa-id-card fa-2x"></i>
+                                    </div>
+                                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                                        <p>Fill in your personal details and proceed to the next step</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
 
-            <i class="fa-solid fa-book-open-reader fa-3x bookMasterClassLinkIcon"></i><a href="{{route('MasterclassForm')}}" class="bookMasterClassLink">Book a Masterclass</a>
+                    <div class="carousel-item">
+                        <div class="card border bg-warning">
+                            <div class="card-header">
+                                <div class="card-title"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                        <i class="fa-solid fa-certificate fa-2x"></i>
+                                    </div>
+                                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                                        <p>Select the specific course that you want to apprentice in with us</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card border bg-warning">
+                            <div class="card-header">
+                                <div class="card-title"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                        <i class="fa-solid fa-coins fa-2x"></i>
+                                    </div>
+                                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                                        <p>Select your preferred payment method and proceed to the next step</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card border bg-warning">
+                            <div class="card-header">
+                                <div class="card-title"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                        <i class="fa-solid fa-file-invoice-dollar fa-2x"></i>
+                                    </div>
+                                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                                        <p>Depending on the payment method selected, complete your payment and proceed to the next step</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card border bg-warning">
+                            <div class="card-header">
+                                <div class="card-title"></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                        <i class="fa-solid fa-clock fa-2x"></i>
+                                    </div>
+                                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                                        <p>Finally, after completion of payment, await communication from our representative.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <p class="pt-5 text-white masterClassHeaderInfoText">Your <b>journey</b> to becoming a <b>master baker</b> begins <i>here</i>. Book right now...</p>
+
+            <i class="fa-solid fa-book-open-reader fa-2x bookMasterClassLinkIcon"></i><a href="{{route('MasterclassForm')}}" class="bookMasterClassLink">Book a Masterclass</a>
 
             @if(Session::has('book-masterclass-successfull'))
                 <div class="alert alert-success alert-dismissible fade show"><button type="button" class="btn-close" data-bs-dismiss="alert"></button><i class="fa-solid fa-circle-check"></i>{{Session::get('book-masterclass-successfull')}}
@@ -53,10 +154,12 @@
         </div>
     </div>
 
-    <div class="row pt-5">
-        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <h5 class="text-white text-center float-start masterClassBodyText">Our apprentice program is designed to impact everyone.</h5>
+    <div class="row darkShade">
+        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+            <h5 class="text-white text-center masterClassBodyText">Our apprentice program is designed to impact everyone.</h5>
         </div>
+        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
     </div>
 
     <div class="row pt-5">
@@ -64,7 +167,7 @@
             <div class="card bg-dark" id="masterClassCard">
                 <div class="card-header">
                     <div class="card-title">
-                        <h5 class="text-white text-center masterClassCardHeaderText">AboutUs Section</h5>
+                        <h5 class="text-white text-center masterClassCardHeaderText">AboutUs</h5>
                     </div>
                 </div>
 
@@ -75,7 +178,7 @@
                 </div>
 
                 <div class="card-footer d-flex justify-content-center">
-                    <a class="masterClassCardFooterText" href="{{route('index')}}#about-us-area"><i class="fa-solid fa-circle-right fa-1x masterClassCardsIcons" id=""></i>{{ __('Go to AboutUs Section') }}</a>
+                    <a class="masterClassCardFooterText" href="{{route('aboutUsIndex')}}"><i class="fa-solid fa-circle-right fa-1x masterClassCardsIcons" id=""></i>{{ __('Go to AboutUs') }}</a>
                 </div>
             </div>
         </div>

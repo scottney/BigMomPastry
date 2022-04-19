@@ -55,6 +55,8 @@ class PagesController extends Controller
             'product_course' => ['required', 'string'],
             'payment_mode' => ['required', 'string'],
             'amount' => ['required', 'integer'],
+            'field_office_location' => ['required', 'string'],
+            'office_attendant' => ['required', 'string', 'min:1', 'max:19'],
         ]);
 
         if ($data) {
@@ -74,6 +76,8 @@ class PagesController extends Controller
                 'product_course' => $request->input('product_course'),
                 'payment_mode' => $request->input('payment_mode'),
                 'amount' => $request->input('amount'),
+                'field_office_location' => $request->input('field_office_location'),
+                'office_attendant' => $request->input('office_attendant'),
             ]);
 
             if ($bookMasterclass) {

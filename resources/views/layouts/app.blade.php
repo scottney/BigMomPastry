@@ -387,6 +387,7 @@
 
     window.addEventListener('load', keyBinder);
     window.addEventListener('load', rippleEffect);
+    window.addEventListener('load', toolTips);
     window.addEventListener('load', typeLogoText);
     window.addEventListener('load', numbersCounter);
     window.addEventListener('load', cardsSwiper);
@@ -418,6 +419,14 @@
             interactive: true,
             resolution: 512,
         });
+    }
+
+    //Script responsible for initialising tooltips
+    function toolTips() {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        })
     }
 
     //Script responsible for creating typewriter effect in the logo area of the landing page

@@ -46,9 +46,11 @@
     </div>
 
     <div class="row pt-5 darkShade">
-        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
             <h5 class="text-white text-center ourValuesBodyText">Our customers/clients inspire us to source and develop the right products to be enjoyed everyday. Their health, lifestyle and enjoyment is our priority.</h5>
         </div>
+        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
     </div>
 
     <div class="row pt-3 pb-5">
@@ -56,7 +58,7 @@
             <div class="card bg-dark" id="ourValuesCard">
                 <div class="card-header">
                     <div class="card-title">
-                        <h5 class="text-white text-center ourValuesCardHeaderText">AboutUs Section</h5>
+                        <h5 class="text-white text-center ourValuesCardHeaderText">AboutUs</h5>
                     </div>
                 </div>
 
@@ -67,7 +69,7 @@
                 </div>
 
                 <div class="card-footer d-flex justify-content-center">
-                    <a class="ourValuesCardFooterText" href="{{route('index')}}#about-us-area"><i class="fa-solid fa-circle-right fa-1x ourValuesCardsIcons" id=""></i>{{ __('Go to AboutUs Section') }}</a>
+                    <a class="ourValuesCardFooterText" href="{{route('aboutUsIndex')}}"><i class="fa-solid fa-circle-right fa-1x ourValuesCardsIcons" id=""></i>{{ __('Go to AboutUs') }}</a>
                 </div>
             </div>
         </div>
@@ -175,7 +177,7 @@
         </div>
     </div>
 
-    <div class="row pb-3">
+    <div class="row pb-3 darkShade">
         <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
             <!-- Content separator between the main content and the margins -->
         </div>
@@ -191,7 +193,7 @@
         </div>
     </div>
 
-    <div class="row pb-3">
+    <div class="row pb-3 darkShade">
         <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
             <!-- Content separator between the main content and the margins -->
         </div>
@@ -207,7 +209,7 @@
         </div>
     </div>
 
-    <div class="row pb-3">
+    <div class="row pb-3 darkShade">
         <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
             <!-- Content separator between the main content and the margins -->
         </div>

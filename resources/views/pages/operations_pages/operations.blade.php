@@ -97,34 +97,7 @@
 						<div class="swiper-pagination"></div>
 					</div>
 				</div>
-
 			</div>
-
-			<div class="row" id="sales-counter">
-	            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
-	                <div class=""><i class="fa fa-clock fa-3x text-white"></i></div>
-	                <p class="text-white counter" style="font-size: 30px;">250</p>
-	                <p class="text-white" style="font-size: 24px;"><b>Working Hours</b></p>
-	            </div>
-
-	            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
-	                <div class=""><i class="fas fa-shopping-bag fa-3x text-white"></i></div>
-	                <p class="text-white counter" style="font-size: 30px;">1000</p>
-	                <p class="text-white" style="font-size: 24px;"><b>Orders</b></p>
-	            </div>
-
-	            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
-	                <div class=""><i class="fas fa-shipping-fast fa-3x text-white"></i></div>
-	                <p class="text-white counter" style="font-size: 30px;">3000</p>
-	                <p class="text-white" style="font-size: 24px;"><b>Delivered Pieces</b></p>
-	            </div>
-
-	            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
-	                <div class=""><i class="fas fa-store-alt fa-3x text-white"></i></div>
-	                <p class="text-white counter" style="font-size: 30px;">10</p>
-	                <p class="text-white" style="font-size: 24px;"><b>Outlets</b></p>
-	            </div>
-	        </div>
 		</div>
 	</div>
 </section>

@@ -16,6 +16,15 @@
 	padding: 0;
 }
 
+/* Globally styles the title attribute of all input elements */
+input[title]:hover::after {
+	content: attr(title);
+	position: absolute;
+	top: -100%;
+	left: 0;
+	background: red;
+}
+
 /* Styles all text giving a unique font to it */
 .styled-text {
 	font-family: 'Italianno', cursive;
@@ -295,10 +304,20 @@
 }
 
 /* Start Of Styling For Pastry And Confectionery For All Occasions and Testimonials */
-.occasionsTitleText, .testimonialHeaderText, .customersTestimonialHeaderText, .employeesTestimonialHeaderText, 
-.companyTitleText {
+.occasionsTitleText, .testimonialHeaderText, .customersTestimonialHeaderText, .employeesTestimonialHeaderText, .companyTitleText, .chooseUsTitleText {
 	font-family: 'Italianno', cursive;
 	text-decoration: underline;
+}
+
+.chooseUsCards {
+	background: radial-gradient(black, orange);
+	height: 75px;
+	align-items: center;
+	justify-content: center;
+}
+
+.chooseUsCardsText {
+	font-size: 20px;
 }
 
 .occasionsContentText {
@@ -389,23 +408,26 @@
     overflow: hidden;
 }
 
-.sliding-cards-black-shade, #sales-counter-shade {
+.sliding-cards-black-shade, #sales-counter-shade, .aboutUs-sliding-cards-black-shade {
 	width: 100%;
 	height: 100%;
-	overflow-y: scroll;
 	background: rgb(0, 0, 0);
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.sliding-cards-black-shade::-webkit-scrollbar {
+.aboutUs-sliding-cards-black-shade {
+	overflow-y: scroll;
+}
+
+.aboutUs-sliding-cards-black-shade::-webkit-scrollbar {
   width: 10px;               /* width of the entire scrollbar */
 }
 
-.sliding-cards-black-shade::-webkit-scrollbar-track {
+.aboutUs-sliding-cards-black-shade::-webkit-scrollbar-track {
   background: linear-gradient(to right, black, orange);        /* color of the tracking area */
 }
 
-.sliding-cards-black-shade::-webkit-scrollbar-thumb {
+.aboutUs-sliding-cards-black-shade::-webkit-scrollbar-thumb {
   background-color: blue;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid #FFFFFF;  /* creates padding around scroll thumb */
@@ -686,13 +708,6 @@
 	background-size: cover;
 }
 
-#aboutUsPageSlide4 {
-	background: url('/images/aboutUsPageImages/culture.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
 .aboutUsPageCards {
 	border-radius: 15px;
 	background: rgba(255, 255, 255, 0.25);
@@ -865,7 +880,7 @@
 	border-radius: 15px;
 }
 
-.subscribeButton, .resetButton, .registerButton, .loginButton, .resetPasswordButton, .submitButton {
+.subscribeButton, .resetButton, .registerButton, .loginButton, .resetPasswordButton, .prevButton, .nextButton, .submitButton {
 	font-family: serif, sans-serif;
 	font-size: 12px;
 	font-weight: 175;
@@ -937,6 +952,10 @@
 	font-family: 'Italianno', cursive;
 	font-size: 36px;
 	text-decoration: underline;
+}
+
+.masterClassStepHeaderText {
+	font-size: 24px;
 }
 
 .ourValuesBodyText, .masterClassBodyText {
@@ -1029,11 +1048,6 @@
 	font-size: 16px;
 }
 
-.bookMasterClassImage {
-	width: 100%;
-	height: auto;
-}
-
 .bookMasterCardImage {
 	width: 100%;
 	height: 275px;
@@ -1075,21 +1089,22 @@
 }
 
 #inputId, #inputSystemRole, #inputFirstName, #inputSurname, #inputMiddleName, #inputIdNumber, #inputDateOfBirth, #inputAge, #inputPhoneNumber, #inputEmail, 
-#inputPlaceOfResidence, #inputApprenticeId, #inputApprenticeSession, #inputPaymentMode, #inputProductCourse, #inputAmount {
+#inputPlaceOfResidence, #inputApprenticeId, #inputApprenticeSession, #inputPaymentMode, #inputProductCourse, #inputAmount, #inputFieldOfficeLocation, 
+#inputOfficeAttendant {
 	border-radius: 15px;
 	width: 100%;
 }
 
 #inputId:hover, #inputSystemRole:hover, #inputFirstName:hover, #inputSurname:hover, #inputMiddleName:hover, #inputIdNumber:hover, #inputDateOfBirth:hover, 
 #inputAge:hover, #inputPhoneNumber:hover, #inputEmail:hover, #inputPlaceOfResidence:hover, #inputApprenticeId:hover, #inputApprenticeSession:hover, 
-#inputPaymentMode:hover, #inputProductCourse:hover, #inputAmount:hover {
+#inputPaymentMode:hover, #inputProductCourse:hover, #inputAmount:hover, #inputFieldOfficeLocation:hover, #inputOfficeAttendant:hover {
 	background: #FF8000;
 	cursor: pointer;
 }
 
 #inputId:focus, #inputSystemRole:focus, #inputFirstName:focus, #inputSurname:focus, #inputMiddleName:focus, #inputIdNumber:focus, #inputDateOfBirth:focus, 
 #inputAge:focus, #inputPhoneNumber:focus, #inputEmail:focus, #inputPlaceOfResidence:focus, #inputApprenticeId:focus, #inputApprenticeSession:focus, 
-#inputPaymentMode:focus, #inputProductCourse:focus, #inputAmount:focus {
+#inputPaymentMode:focus, #inputProductCourse:focus, #inputAmount:focus, #inputFieldOfficeLocation:focus, #inputOfficeAttendant:focus {
 	background: #FFCC99;
 }
 

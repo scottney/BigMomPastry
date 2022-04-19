@@ -30,6 +30,8 @@ class CreateBookMasterclassTable extends Migration
             $table->string('apprentice_session');
             $table->string('product_course');
             $table->string('payment_mode');
+            $table->string('field_office_location');
+            $table->string('office_attendant');
             $table->integer('amount');
             $table->timestamps();
 

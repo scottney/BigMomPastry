@@ -416,8 +416,158 @@
 	</div>
 </section>
 
-<section id="chooseSection">
-	{{-- This section is for why should you choose us section --}}
+<section id="sales-counter">
+	<div class="row darkShade">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+			<h5 class="display-6 text-center text-white chooseUsTitleText">Why Choose Us?</h5>
+		</div>
+	</div>
+
+	<div class="row darkShade">
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+			<div class="card chooseUsCards">
+				<div class="class-header">
+					<div class="class-title"></div>
+				</div>
+
+				<div class="class-body">
+					<h5 class="display-6 text-center text-white chooseUsCardsText">Quality Ingridients</h5>
+				</div>
+
+				<div class="class-footer"></div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+			<div class="card chooseUsCards">
+				<div class="class-header">
+					<div class="class-title"></div>
+				</div>
+
+				<div class="class-body">
+					<h5 class="display-6 text-center text-white chooseUsCardsText">Fresh Products</h5>
+				</div>
+
+				<div class="class-footer"></div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+			<div class="card chooseUsCards">
+				<div class="class-header">
+					<div class="class-title"></div>
+				</div>
+
+				<div class="class-body">
+					<h5 class="display-6 text-center text-white chooseUsCardsText">Healthy Products</h5>
+				</div>
+
+				<div class="class-footer"></div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+			<div class="card chooseUsCards">
+				<div class="class-header">
+					<div class="class-title"></div>
+				</div>
+
+				<div class="class-body">
+					<h5 class="display-6 text-center text-white chooseUsCardsText">Custom Tailored Products</h5>
+				</div>
+
+				<div class="class-footer"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row pt-3 darkShade">
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+			<div class="card chooseUsCards">
+				<div class="class-header">
+					<div class="class-title"></div>
+				</div>
+
+				<div class="class-body">
+					<h5 class="display-6 text-center text-white chooseUsCardsText">Great Customer Experience</h5>
+				</div>
+
+				<div class="class-footer"></div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+			<div class="card chooseUsCards">
+				<div class="class-header">
+					<div class="class-title"></div>
+				</div>
+
+				<div class="class-body">
+					<h5 class="display-6 text-center text-white chooseUsCardsText">Different Product Taste</h5>
+				</div>
+
+				<div class="class-footer"></div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+			<div class="card chooseUsCards">
+				<div class="class-header">
+					<div class="class-title"></div>
+				</div>
+
+				<div class="class-body">
+					<h5 class="display-6 text-center text-white chooseUsCardsText">Affordable Products</h5>
+				</div>
+
+				<div class="class-footer"></div>
+			</div>
+		</div>
+
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+			<div class="card chooseUsCards">
+				<div class="class-header">
+					<div class="class-title"></div>
+				</div>
+
+				<div class="class-body">
+					<h5 class="display-6 text-center text-white chooseUsCardsText">2+ Years of Experience</h5>
+				</div>
+
+				<div class="class-footer"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
+			<div class=""><i class="fa fa-clock fa-3x text-white"></i></div>
+			<p class="text-white counter" style="font-size: 30px;">3000</p>
+			<p class="text-white" style="font-size: 24px;"><b>+</b></p>
+	        <p class="text-white" style="font-size: 24px;"><b>Working Hours</b></p>
+	    </div>
+
+	    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
+	    	<div class=""><i class="fas fa-shopping-bag fa-3x text-white"></i></div>
+	    	<p class="text-white counter" style="font-size: 30px;">10000</p>
+	    	<p class="text-white" style="font-size: 24px;"><b>+</b></p>
+	    	<p class="text-white" style="font-size: 24px;"><b>Orders</b></p>
+	    </div>
+
+	    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
+	    	<div class=""><i class="fas fa-shipping-fast fa-3x text-white"></i></div>
+	    	<p class="text-white counter" style="font-size: 30px;">30000</p>
+	    	<p class="text-white" style="font-size: 24px;"><b>+</b></p>
+	    	<p class="text-white" style="font-size: 24px;"><b>Delivered Pieces</b></p>
+	    </div>
+
+	    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center pt-5 pb-5" id="sales-counter-shadow">
+	    	<div class=""><i class="fas fa-store-alt fa-3x text-white"></i></div>
+	    	<p class="text-white counter" style="font-size: 30px;">10</p>
+	    	<p class="text-white" style="font-size: 24px;"><b>+</b></p>
+	    	<p class="text-white" style="font-size: 24px;"><b>Outlets</b></p>
+	    </div>
+	</div>
 </section>
 
 <section id="testimonialsSection">

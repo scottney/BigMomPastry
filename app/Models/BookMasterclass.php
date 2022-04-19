@@ -32,6 +32,8 @@ class BookMasterclass extends Model
         'product_course',
         'payment_mode',
         'amount',
+        'field_office_location',
+        'office_attendant',
         'receipt_number',
     ];
 }

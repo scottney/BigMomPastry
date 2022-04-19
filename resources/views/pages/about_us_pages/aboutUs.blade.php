@@ -119,7 +119,7 @@
 		</div>
 
 		<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-			<i class="fa-solid fa-hands-holding fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="" class=" p-1" id="aboutUsLinkText">SUSTAINABILITY AT BIGMOMPASTRY</a></i><br>
+			<i class="fa-solid fa-hands-holding fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="{{route('sustainability')}}" class=" p-1" id="aboutUsLinkText">SUSTAINABILITY AT BIGMOMPASTRY</a></i><br>
 
 			<i class="fa-solid fa-circle-chevron-right fa-1x bottomReveal p-3" id="aboutUsScrollTextLink"><a href="" class=" p-1" id="aboutUsLinkText">LEARN MORE</a></i>
 		</div>
@@ -132,7 +132,7 @@
 			<div class="swiper-container pt-3 pb-3">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide aboutUs-swiper-slide" id="aboutUsPageSlide2">
-						<div class="sliding-cards-black-shade">
+						<div class="aboutUs-sliding-cards-black-shade">
 							<h5 class="display-6 pt-3 text-white text-center statementsHeaderText" id=""><b>Mission</b></h5>
 							<p class="text-white p-1 textIndent" id="">The power and impact of good pastry and confectionery shared inspires all of us at <b>BigMomPastry</b> to innovate and create the finest, most fresh, affordable products. We nurture the idea that our products are universally enjoyed by <i>families</i> and <i>friends</i>, making us part of life's celebrations and memories.</p>
 							<p class="text-white p-1 textIndent" id="">So we strive in delivering fresh, well baked, clean and healthy <i>pastry</i> and <i>confectionery</i> to all our customers and clients. With a team of fully talented individuals, committed to providing superior quality products at a cost effective price in an environment that is perfectly clean, safe and friendly to both the employees and the customers. Our goal is to provide every customer and client with an un-matched product experience. Other than that we strive to provide our employees with a favourable working environment because our employees are not just workers but, are also part of the <b>BigMomPastry</b> family.</p>
@@ -141,7 +141,7 @@
 					</div>
 
 					<div class="swiper-slide aboutUs-swiper-slide" id="aboutUsPageSlide3">
-						<div class="sliding-cards-black-shade">
+						<div class="aboutUs-sliding-cards-black-shade">
 							<h5 class="display-6 pt-3 text-white text-center statementsHeaderText" id=""><b>Vision</b></h5>
 							<p class="text-white p-1 textIndent" id="">As a bakery, we are here to collaborate with customers and clients in creating custom, unique, fashionable, affordable, fresh and healthy <i>pastry</i> and <i>confectionery</i>. We are also here to make it possible for anyone to be able to access our products and services from anywhere. We <b><i>envision</i></b> our clients and customers being able to <i>imagine</i> the type of pastry that they want, and connecting with us to have us <b>bake</b>, <b>design</b> and <b>deliver</b> the product to them. Other than the above stated, we foresee a future where we will have an extremely friendly environment for workers. A work environment that will attract workers from across the globe to want to be part of the <b>BigMomPastry</b> family.</p>
 							<p class="text-white p-1 textIndent" id="">We also want to create opportunities for all learners to acquire knowledge, skills and competences for employment in the baking and hospitality industry in not only <b>Nairobi</b>, <b>Kenya</b> but also across <b>Africa</b> and the <b>globe</b>. We foresee ourselves being the pivotal factor across the population in creating not only jobs, employemnt and financial security but also impacting the community and society with sustainable skills. We envision uplifting communities and societies across the region and globe to create economic growth within these communities and populations. We envision being on the fore-front of eradicating poverty.</p>
@@ -150,7 +150,7 @@
 					</div>
 
 					<div class="swiper-slide aboutUs-swiper-slide" id="aboutUsPageSlide1">
-						<div class="sliding-cards-black-shade">
+						<div class="aboutUs-sliding-cards-black-shade">
 							<h5 class="display-6 pt-3 text-white text-center statementsHeaderText" id=""><b>Core Values</b></h5>
 							<p class="text-white p-1 textIndent" id=""><b><i>Accountability:</i></b> We accept and acknowledge responsibility for actions, products, decisions, time and policies. We also take pride in our achievements and heed our mistakes.</p>
 							<p class="text-white p-1 textIndent" id=""><b><i>Adaptability:</i></b> We build new partnerships while at the same time retain long-term partnerships by continously evaluating and re-evaluating our products and talent to meet changing market demands.</p>
@@ -174,22 +174,11 @@
 							<p class="text-white p-1 textIndent" id=""><b><i>Teamwork:</i></b> We coperate and cordinate efficiently and effectively among our clients/customers, employees and stakeholders. All partners rely on each other, and we put company interests before individual interests to work towards and accomplish the larger objectives of the company. Our success depends on our ability to perform as one successful team.</p>
 						</div>
 					</div>
-
-					<div class="swiper-slide aboutUs-swiper-slide" id="aboutUsPageSlide4">
-						<div class="sliding-cards-black-shade">
-							<h5 class="display-6 pt-3 text-white text-center statementsHeaderText" id=""><b>Culture</b></h5>
-							<p class="text-white p-1 textIndent" id="">We have been there fueling the fire, fueling the romance between couples with state of the art pastry and confectionery.</p>
-						</div>
-					</div>
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 	</div>
-
-	<row class="">
-		{{-- This section is for the projects counter section --}}
-	</row>
 
 	<div class="row pt-3 darkShade">
 		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
