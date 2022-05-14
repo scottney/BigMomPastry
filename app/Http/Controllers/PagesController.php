@@ -45,6 +45,8 @@ class PagesController extends Controller
             'middle_name' => ['required', 'string', 'min:1', 'max:19'],
             'id_number' => ['required', 'integer'],
             'date_of_birth' => ['required', 'date'],
+            'current_date' => ['required', 'date'],
+            'current_time' => ['required'],
             'age' => ['required', 'integer'],
             'phone_number' => ['required', 'digits:10'],
             'email' => ['required', 'email'],
@@ -57,6 +59,7 @@ class PagesController extends Controller
             'amount' => ['required', 'integer'],
             'field_office_location' => ['required', 'string'],
             'office_attendant' => ['required', 'string', 'min:1', 'max:19'],
+            'receipt_number' => ['required', 'string'],
         ]);
 
         if ($data) {
@@ -66,6 +69,8 @@ class PagesController extends Controller
                 'middle_name' => $request->input('middle_name'),
                 'id_number' => $request->input('id_number'),
                 'date_of_birth' => $request->input('date_of_birth'),
+                'current_date' => $request->input('current_date'),
+                'current_time' => $request->input('current_time'),
                 'age' => $request->input('age'),
                 'phone_number' => $request->input('phone_number'),
                 'email' => $request->input('email'),
@@ -78,6 +83,7 @@ class PagesController extends Controller
                 'amount' => $request->input('amount'),
                 'field_office_location' => $request->input('field_office_location'),
                 'office_attendant' => $request->input('office_attendant'),
+                'receipt_number' => $request->input('receipt_number'),
             ]);
 
             if ($bookMasterclass) {

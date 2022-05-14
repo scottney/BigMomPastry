@@ -53,8 +53,6 @@ input[title]:hover::after {
 	-webkit-backdrop-filter: blur(4px);
 	width: 100%;
 	height: 100%;
-	align-items: center;
-	justify-content: center;
 }
 
 .homePageCards:hover {
@@ -83,9 +81,277 @@ input[title]:hover::after {
 	color: orange;
 }
 
-.pastryCardImage, .confectioneryCardImage, .drinksCardImage, .fastFoodsCardImage, .saladsCardImage {
+#pastryItem1 {
+	background: url('/images/homepage/pastry/pastry.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	width: 100%;
-	height: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#pastryItem2 {
+	background: url('/images/homepage/pastry/pastry-1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#pastryItem3 {
+	background: url('/images/homepage/pastry/pastry-2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#pastryItem4 {
+	background: url('/images/homepage/pastry/pastry-3.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#pastryItem5 {
+	background: url('/images/homepage/pastry/pastry-4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#confectioneryItem1 {
+	background: url('/images/homepage/confectionery/confectionery-6.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#confectioneryItem2 {
+	background: url('/images/homepage/confectionery/confectionery-1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#confectioneryItem3 {
+	background: url('/images/homepage/confectionery/confectionery-7.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#confectioneryItem4 {
+	background: url('/images/homepage/confectionery/confectionery-3.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#confectioneryItem5 {
+	background: url('/images/homepage/confectionery/confectionery-4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#drinksItem1 {
+	background: url('/images/homepage/drinks/milkshakes/milkshakes-13.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#drinksItem2 {
+	background: url('/images/homepage/drinks/juices/natural-blend/juice-4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#drinksItem3 {
+	background: url('/images/homepage/drinks/healthy/uji/uji-2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#drinksItem4 {
+	background: url('/images/homepage/drinks/coffee/coffee-1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#drinksItem5 {
+	background: url('/images/homepage/drinks/milkshakes/milkshakes-9.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#fastfoodsItem1 {
+	background: url('/images/homepage/fastfoods/fastfoods.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#fastfoodsItem2 {
+	background: url('/images/homepage/fastfoods/fried-chicken/fried-chicken-2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#fastfoodsItem3 {
+	background: url('/images/homepage/fastfoods/fried-beef/fried-beef.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#fastfoodsItem4 {
+	background: url('/images/homepage/fastfoods/fried-mutton/fried-mutton-4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#fastfoodsItem5 {
+	background: url('/images/homepage/fastfoods/fried-pork/fried-pork-4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#saladsItem1 {
+	background: url('/images/homepage/salads/fruit-salads/fruit-salads.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#saladsItem2 {
+	background: url('/images/homepage/salads/vegetable-salads/vegetable-salads.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#saladsItem3 {
+	background: url('/images/homepage/salads/fruit-salads/fruit-salads-2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#saladsItem4 {
+	background: url('/images/homepage/salads/vegetable-salads/vegetable-salads-4.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+#saladsItem5 {
+	background: url('/images/homepage/salads/fruit-salads/fruit-salads-5.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
 	border: 1px solid #FFFFFF;
 	border-radius: 50%;
 }
@@ -318,10 +584,6 @@ input[title]:hover::after {
 
 .chooseUsCardsText {
 	font-size: 20px;
-}
-
-.occasionsContentText {
-	text-indent: 20%;
 }
 
 .homePageSlides {
@@ -714,7 +976,7 @@ input[title]:hover::after {
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	width: 85%;
-	height: auto;
+	height: 100%;
 }
 
 .leftAdjust {
@@ -726,12 +988,103 @@ input[title]:hover::after {
 	box-shadow: 4px 8px 4px 8px orange;
 }
 
-.teamImage {
-	width: 30%;
-	height: 25%;
+.teamImage1 {
+	background: url('/images/profile/ourTeam/scott.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	border: 1px solid #FFFFFF;
 	border-radius: 50%;
-	margin-left: 30%;
+	width: 115px;
+	height: 115px;
+}
+
+.teamImage2 {
+	background: url('/images/profile/ourTeam/default.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
+}
+
+.teamImage3 {
+	background: url('/images/profile/ourTeam/default.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
+}
+
+.teamImage4 {
+	background: url('/images/profile/ourTeam/eve.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
+}
+
+.teamImage5 {
+	background: url('/images/profile/ourTeam/default.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
+}
+
+.teamImage6 {
+	background: url('/images/profile/ourTeam/default.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
+}
+
+.teamImage7 {
+	background: url('/images/profile/ourTeam/default.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
+}
+
+.teamImage8 {
+	background: url('/images/profile/ourTeam/default.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
+}
+
+.teamImage9 {
+	background: url('/images/profile/ourTeam/default.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	width: 115px;
+	height: 115px;
 }
 
 .reveal {
@@ -880,7 +1233,7 @@ input[title]:hover::after {
 	border-radius: 15px;
 }
 
-.subscribeButton, .resetButton, .registerButton, .loginButton, .resetPasswordButton, .prevButton, .nextButton, .submitButton {
+.subscribeButton, .registerButton, .loginButton, .resetPasswordButton, .prevButton, .nextButton, .submitButton {
 	font-family: serif, sans-serif;
 	font-size: 12px;
 	font-weight: 175;
@@ -909,7 +1262,7 @@ input[title]:hover::after {
 	margin-left: 12%;
 }
 
-.cardHeader {
+.cardHeader, .cardFooter {
 	background: linear-gradient(to right, black, orange);
 }
 
@@ -986,6 +1339,10 @@ input[title]:hover::after {
   	-ms-animation: fadeIn linear 3s;
 }
 
+#ourValuesCard, #masterClassCard {
+	height: 100%;
+}
+
 #ourValuesCard:hover, #masterClassCard:hover {
 	box-shadow: 2px 4px 2px 4px #FFFFFF;
 }
@@ -1042,6 +1399,32 @@ input[title]:hover::after {
 	padding: 10px;
 }
 
+.steps {
+	display: none;
+}
+
+.stepsControllerIcons {
+	height: 15px;
+	width: 15px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+	background: #F0Ad4E;
+}
+
+.stepsControllerIcons.activeStep {
+	opacity: 1;
+}
+
+.invalidStep {
+	background: #FFE6E6;
+}
+
+.stepsControllerIcons.stepFinish {
+	background: #5CB85C;
+}
+
 .bookMasterclassFormText {
 	color: #FFFFFF;
 	font-family: serif, sans-serif;
@@ -1090,21 +1473,23 @@ input[title]:hover::after {
 
 #inputId, #inputSystemRole, #inputFirstName, #inputSurname, #inputMiddleName, #inputIdNumber, #inputDateOfBirth, #inputAge, #inputPhoneNumber, #inputEmail, 
 #inputPlaceOfResidence, #inputApprenticeId, #inputApprenticeSession, #inputPaymentMode, #inputProductCourse, #inputAmount, #inputFieldOfficeLocation, 
-#inputOfficeAttendant {
+#inputOfficeAttendant, #inputCurrentDate, #inputCurrentTime, #inputReceiptNumber {
 	border-radius: 15px;
 	width: 100%;
 }
 
 #inputId:hover, #inputSystemRole:hover, #inputFirstName:hover, #inputSurname:hover, #inputMiddleName:hover, #inputIdNumber:hover, #inputDateOfBirth:hover, 
 #inputAge:hover, #inputPhoneNumber:hover, #inputEmail:hover, #inputPlaceOfResidence:hover, #inputApprenticeId:hover, #inputApprenticeSession:hover, 
-#inputPaymentMode:hover, #inputProductCourse:hover, #inputAmount:hover, #inputFieldOfficeLocation:hover, #inputOfficeAttendant:hover {
+#inputPaymentMode:hover, #inputProductCourse:hover, #inputAmount:hover, #inputFieldOfficeLocation:hover, #inputOfficeAttendant:hover, #inputCurrentDate:hover, 
+#inputCurrentTime:hover, #inputReceiptNumber:hover {
 	background: #FF8000;
 	cursor: pointer;
 }
 
 #inputId:focus, #inputSystemRole:focus, #inputFirstName:focus, #inputSurname:focus, #inputMiddleName:focus, #inputIdNumber:focus, #inputDateOfBirth:focus, 
 #inputAge:focus, #inputPhoneNumber:focus, #inputEmail:focus, #inputPlaceOfResidence:focus, #inputApprenticeId:focus, #inputApprenticeSession:focus, 
-#inputPaymentMode:focus, #inputProductCourse:focus, #inputAmount:focus, #inputFieldOfficeLocation:focus, #inputOfficeAttendant:focus {
+#inputPaymentMode:focus, #inputProductCourse:focus, #inputAmount:focus, #inputFieldOfficeLocation:focus, #inputOfficeAttendant:focus, #inputCurrentDate:focus, 
+#inputCurrentTime:focus, #inputReceiptNumber:focus {
 	background: #FFCC99;
 }
 

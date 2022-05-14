@@ -29,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.2/umd/popper.min.js" integrity="sha512-aDciVjp+txtxTJWsp8aRwttA0vR2sJMk/73ZT7ExuEHv7I5E6iyyobpFOlEFkq59mWW8ToYGuVZFnwhwIUisKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script handler for Bootstrap Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap script that controls dropdown boxes -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script handler for projects counter -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -43,7 +44,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js" integrity="sha512-zuZ5wVszlsRbRF/vwXD0QS/tHzBYHFzCD/BT0lI3yrWhNZFWDkkF3KPEY//WTanqxwPdZkskQ+xZo0rnfHBc5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Script source for Bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap-grid.min.css" integrity="sha512-q0LpKnEKG/pAf1qi1SAyX0lCNnrlJDjAvsyaygu07x8OF4CEOpQhBnYiFW6YDUnOOcyAEiEYlV4S9vEc6akTEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Script source for Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.4.1/swiper-bundle.css" integrity="sha512-PYSQaQBKTu066xiq+XES4zNfKps3Za9xFsPH97MuEaP53a4kNFed/Q7lW539jALMETHApKj7/CZ1ac9d0NBzZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font Awesome Icons -->
@@ -129,7 +130,7 @@
                                 <ul class="navbar-nav ms-auto">
                                     <!-- Authentication Links -->
                                     @guest
-                                    <i class="fa-solid fa-circle-user fa-2x text-white p-2"></i>
+                                    <i class="fa-solid fa-circle-user fa-2x text-white pt-2"></i>
                                     <li class="nav-item dropdown myAccountDrop">
                                         <a class="nav-link dropdown-toggle pt-2 styled-text text-white accountStatusText" id="accountStatusDropDownMenu" data-bs-toggle="dropdown" aria-expanded="false">{{ __('My Account') }}</a>
 
@@ -210,9 +211,9 @@
                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                     <h5 class="display-6 text-white pt-3 styled-text textFooterUnderline">BIGMOMPASTRY</h5>
 
-                    <p class="text-white textFooter">As a pastry and confectionery bakery, distributor and outlet, we pride ourselves in delivering high quality, fresh and healthy baked products.</p>
+                    <p class="text-white textFooter">As a pastry and confectionery bakery, distributor and outlet, we pride ourselves on delivering high-quality, fresh, and healthy baked products.</p>
 
-                    <p class="text-white textFooter">We want to bring an entirely new and different experience when it comes to baked goods. Other than that, we want our customers to enjoy world class pastry and confectionery.</p>
+                    <p class="text-white textFooter">We want to bring an entirely new and different experience when it comes to baked goods. Other than that, we want our customers to enjoy world-class pastry and confectionery.</p>
                 </div>
 
                 <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
@@ -683,8 +684,124 @@
             state = true;
         }
     }
-    
 
+    //Start of Book a Masterclass Payment Mode handler
+    function bookMasterclassPaymentMode() {
+        var pMode = document.getElementById("inputPaymentMode").value;
+        
+        if(pMode == 'M-Pesa Paybill') {
+            var field_office_location_title = document.getElementById("inputFieldOfficeLocationTitle");
+            var field_office_location = document.getElementById("inputFieldOfficeLocation");
+            var office_attendant_title = document.getElementById("inputOfficeAttendantTitle");
+            var office_attendant = document.getElementById("inputOfficeAttendant");
+
+            field_office_location_title.style.display = "none";
+            field_office_location.style.display = "none";
+            office_attendant_title.style.display = "none";
+            office_attendant.style.display = "none";
+        } else {
+            var field_office_location_title = document.getElementById("inputFieldOfficeLocationTitle");
+            var field_office_location = document.getElementById("inputFieldOfficeLocation");
+            var office_attendant_title = document.getElementById("inputOfficeAttendantTitle");
+            var office_attendant = document.getElementById("inputOfficeAttendant");
+
+            field_office_location_title.style.display = "block";
+            field_office_location.style.display = "block";
+            office_attendant_title.style.display = "block";
+            office_attendant.style.display = "block";
+        }
+    }
+
+    /******************************* Start of functions that handle the book masterclass multiple steps form *******************************/
+    var currentStep = 0; //Set current step to be the first step
+    showCurrentStep(currentStep); //Display the current step
+
+    //Function that shows the current step
+    function showCurrentStep(n) {
+        var x = document.getElementsByClassName("steps");
+        x[n].style.display = "block";
+
+        if(n == 0) {
+            document.getElementById("previousButton").style.display = "none";
+        } else {
+            document.getElementById("previousButton").style.display = "inline";
+        }
+
+        if(n == (x.length - 1)) {
+            document.getElementById("buttonSubmit").style.display = "inline";
+            document.getElementById("nextButton").style.display = "none";
+        } else {
+            document.getElementById("buttonSubmit").style.display = "none";
+            document.getElementById("nextButton").style.display = "inline";
+        }
+
+        //Function responsible for displaying the correct step indicator
+        fixStepIndicator(n);
+    }
+
+    //Function responsible for figuring out which step to display
+    function nextPrev(n) {
+        var x = document.getElementsByClassName("steps");
+
+        //Exit the function if any field in the current step is invalid
+        if (n == 1 && !validateForm()) return false;
+
+        //Hide the current step
+        x[currentStep].style.display = "none";
+
+        //Increase or decrease the current step by 1
+        currentStep = currentStep + n;
+
+        //If you reached the end of the form
+        if (currentStep >= x.length) {
+            //Submit form
+            document.getElementById("bookMasterclassForm").submit();
+            return false;
+        }
+        //Otherwise display the correct step
+        showCurrentStep(currentStep);
+    }
+
+    //Function responsible for form validation
+    function validateForm() {
+        var x, y, i, valid = true;
+        x = document.getElementsByClassName("steps");
+        y = x[currentStep].getElementsByTagName("input");
+
+        //Loop that checks every input field in the current step
+        for (i = 0; i < y.length; i++) {
+            //If a field is empty
+            if (y[i].value == "") {
+                //Add an "invalid" class to the field
+                y[i].className += "invalidStep";
+                alert(y[i].id + " cannot be empty");
+
+                //Set the current valid status to false
+                valid = false;
+            }
+        }
+        //If the valid status is true, mark the step as finished and valid
+        if (valid) {
+            document.getElementsByClassName("stepsControllerIcons")[currentStep].className += " stepFinish";
+        }
+
+        //Return the valid status 
+        return valid;
+    }
+
+    //Function responsible for fixing the steps indicator by adding and removing the active class
+    function fixStepIndicator(n) {
+        var i, x = document.getElementsByClassName("stepsControllerIcons");
+        
+        for (i = 0; i < x.length; i++) {
+            x[i].className = x[i].className.replace(" activeStep", "");
+        }
+
+        //Add active class to the current step
+        x[n].className += " activeStep";
+    }
+
+    /******************************* End of functions that handle the book masterclass multiple steps form *******************************/
 
 
 

@@ -21,8 +21,10 @@ class CreateBookMasterclassTable extends Migration
             $table->string('surname');
             $table->string('middle_name');
             $table->unsignedBigInteger('id_number')->index();
-            $table->integer('receipt_number')->unique()->nullable();
+            $table->string('receipt_number', 39)->unique()->nullable();
             $table->date('date_of_birth');
+            $table->date('current_date');
+            $table->time('current_time');
             $table->integer('age');
             $table->string('phone_number');
             $table->string('email');

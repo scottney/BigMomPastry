@@ -90,14 +90,13 @@
 
                         <div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 float-end">
-                                <button type="reset" class="btn btn-danger float-start resetButton">{{ __('Reset') }}</button>
                                 <button type="submit" class="btn btn-primary float-end loginButton">{{ __('Login') }}</button>
                             </div>
                         </div>
                     </form>
                 </div>
 
-                <div class="card-footer"></div>
+                <div class="card-footer cardFooter"></div>
             </div>
         </div>
     </div>

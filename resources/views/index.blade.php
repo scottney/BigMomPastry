@@ -123,7 +123,7 @@
 							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 								<h5 class="display-6 text-white p-1 sweetToothHeaderText">Satisfy Your Sweet Tooth</h5>
 
-								<p class="text-white p-1 sweetToothMiniText">At <b><i>BigMomPastry</i></b>, we believe that <b><i>perfection</i> is not a <i>destination</i></b> but a <i>journey</i>. So, whether it's eclairs, chocolates, bread, cakes, cookies, buns, rolls or milk shakes, <b><i>BigMomPastry</i></b> has you covered. With <strong>pastry and confectionery</strong> ranging from across multiple nationalities, our <i>chefs</i> will give you the experience of a <b><i>lifetime</i></b>.</p>
+								<p class="text-white p-1 sweetToothMiniText">At <b><i>BigMomPastry</i></b>, we believe that <b><i>perfection</i> is not a <i>destination</i></b> but a <i>journey</i>. So, whether it's eclairs, chocolate, bread, cakes, cookies, buns, rolls, or milkshakes, <b><i>BigMomPastry</i></b> has you covered. With <strong>pastry and confectionery</strong> ranging from across multiple nationalities, our <i>chefs</i> will give you the experience of a <b><i>lifetime</i></b>.</p>
 							</div>
 						</div>
 					</div>
@@ -131,9 +131,9 @@
 					<div class="carousel-item">
 						<div class="row">
 							<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-								<h5 class="display-6 text-white p-1 sweetToothHeaderText">Come For The Food, Stay For The Atmosphere</h5>
+								<h5 class="display-6 text-white p-1 sweetToothHeaderText">Come For The Pastry and Confectionery, Stay For The Atmosphere</h5>
 
-								<p class="text-white p-1 sweetToothMiniText">At <b>BigMomPastry</b>, <i>food</i>, <i>design</i> and <i>ambience</i> come together to create a <i>memorable sensory experience</i>.A <i>culinary</i> adventure for all the <i>senses</i>. Enjoy pure, natural, nutritious food that tastes amazing. <b>Experience</b> food and allow it to meet your <i>soul</i>.Here, we give a refined <b><i>eperience</i></b> for those who <b><i>appreciate</i></b> the finer things in <b><i>life</i></b>.
+								<p class="text-white p-1 sweetToothMiniText">At <b>BigMomPastry</b>, <i>food</i>, <i>design,</i> and <i>ambiance</i> come together to create an <i>unforgettable sensory experience</i>. A <i>culinary</i> adventure for all the <i>senses</i>. Enjoy pure, natural, nutritious pastry and confectionery that tastes amazing. <b>Experience</b> food and allow it to meet your <i>soul</i>. Here, we give a refined <b><i>experience</i></b> to those who <b><i>appreciate</i></b> the finer things in <b><i>life</i></b>.
 							</div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 
 			<div class="row">
 				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-1">
-					<div class="card rightReveal homePageCards">
+					<div class="card text-center rightReveal homePageCards">
 						<div class="card-header">
 							<div class="card-title">
 								<h5 class="display-6 homePageCardsTitle">Pastry</h5>
@@ -152,25 +152,15 @@
 						<div class="card-body">
 							<div class="carousel slide carousel-fade" id="carouselPastryFade" data-bs-ride="carousel">
 								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<img src="{{url('/images/homepage/pastry/pastry.jpeg')}}" class="pastryCardImage" alt="pastry">
-									</div>
+									<div class="carousel-item active" id="pastryItem1"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/pastry/pastry-1.jpg')}}" class="pastryCardImage" alt="pastry">
-									</div>
+									<div class="carousel-item" id="pastryItem2"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/pastry/pastry-2.jpg')}}" class="pastryCardImage" alt="pastry">
-									</div>
+									<div class="carousel-item" id="pastryItem3"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/pastry/pastry-3.jpg')}}" class="pastryCardImage" alt="pastry">
-									</div>
+									<div class="carousel-item" id="pastryItem4"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/pastry/pastry-4.jpg')}}" class="pastryCardImage" alt="pastry">
-									</div>
+									<div class="carousel-item" id="pastryItem5"></div>
 								</div>
 							</div>
 						</div>
@@ -182,7 +172,7 @@
 				</div>
 
 				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-1">
-					<div class="card bottomReveal homePageCards">
+					<div class="card text-center bottomReveal homePageCards">
 						<div class="card-header">
 							<div class="card-title">
 								<h5 class="display-6 homePageCardsTitle">Confectionery</h5>
@@ -192,25 +182,15 @@
 						<div class="card-body">
 							<div class="carousel slide carousel-fade" id="carouselPastryFade" data-bs-ride="carousel">
 								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<img src="{{url('/images/homepage/confectionery/confectionery-6.jpg')}}" class="confectioneryCardImage" alt="confectionery">
-									</div>
+									<div class="carousel-item active" id="confectioneryItem1"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/confectionery/confectionery-1.jpg')}}" class="confectioneryCardImage" alt="confectionery">
-									</div>
+									<div class="carousel-item" id="confectioneryItem2"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/confectionery/confectionery-7.jpg')}}" class="confectioneryCardImage" alt="confectionery">
-									</div>
+									<div class="carousel-item" id="confectioneryItem3"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/confectionery/confectionery-3.jpg')}}" class="confectioneryCardImage" alt="confectionery">
-									</div>
+									<div class="carousel-item" id="confectioneryItem4"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/confectionery/confectionery-4.jpg')}}" class="confectioneryCardImage" alt="confectionery">
-									</div>
+									<div class="carousel-item" id="confectioneryItem5"></div>
 								</div>
 							</div>
 						</div>
@@ -222,7 +202,7 @@
 				</div>
 
 				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-1">
-					<div class="card leftReveal homePageCards">
+					<div class="card text-center leftReveal homePageCards">
 						<div class="card-header">
 							<div class="card-title">
 								<h5 class="display-6 homePageCardsTitle">Drinks</h5>
@@ -232,25 +212,15 @@
 						<div class="card-body">
 							<div class="carousel slide carousel-fade" id="carouselPastryFade" data-bs-ride="carousel">
 								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<img src="{{url('/images/homepage/drinks/milkshakes/milkshakes-13.jpg')}}" class="drinksCardImage" alt="milkshake">
-									</div>
+									<div class="carousel-item active" id="drinksItem1"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/drinks/juices/natural-blend/juice-4.jpg')}}" class="drinksCardImage" alt="natural-juices">
-									</div>
+									<div class="carousel-item" id="drinksItem2"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/drinks/healthy/uji/uji-2.jpg')}}" class="drinksCardImage" alt="porridge">
-									</div>
+									<div class="carousel-item" id="drinksItem3"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/drinks/coffee/coffee-1.jpg')}}" class="drinksCardImage" alt="coffee">
-									</div>
+									<div class="carousel-item" id="drinksItem4"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/drinks/milkshakes/milkshakes-9.jpg')}}" class="drinksCardImage" alt="milkshake">
-									</div>
+									<div class="carousel-item" id="drinksItem5"></div>
 								</div>
 							</div>
 						</div>
@@ -276,7 +246,7 @@
 		<div class="col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10 p-1">
 			<div class="row">
 				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-1">
-					<div class="card topReveal homePageCards">
+					<div class="card text-center topReveal homePageCards">
 						<div class="card-header">
 							<div class="card-title">
 								<h5 class="display-6 homePageCardsTitle">FastFoods</h5>
@@ -286,25 +256,15 @@
 						<div class="card-body">
 							<div class="carousel slide carousel-fade" id="carouselPastryFade" data-bs-ride="carousel">
 								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<img src="{{url('/images/homepage/fastfoods/fastfoods.jpg')}}" class="fastFoodsCardImage" alt="fastfoods">
-									</div>
+									<div class="carousel-item active" id="fastfoodsItem1"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/fastfoods/fried-chicken/fried-chicken-2.jpg')}}" class="fastFoodsCardImage" alt="fried-chicken">
-									</div>
+									<div class="carousel-item" id="fastfoodsItem2"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/fastfoods/fried-beef/fried-beef.jpg')}}" class="fastFoodsCardImage" alt="fried-beef">
-									</div>
+									<div class="carousel-item" id="fastfoodsItem3"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/fastfoods/fried-mutton/fried-mutton-4.jpg')}}" class="fastFoodsCardImage" alt="fried-mutton">
-									</div>
+									<div class="carousel-item" id="fastfoodsItem4"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/fastfoods/fried-pork/fried-pork-4.jpg')}}" class="fastFoodsCardImage" alt="fried-pork">
-									</div>
+									<div class="carousel-item" id="fastfoodsItem5"></div>
 								</div>
 							</div>
 						</div>
@@ -316,7 +276,7 @@
 				</div>
 
 				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-1">
-					<div class="card rightReveal homePageCards">
+					<div class="card text-center rightReveal homePageCards">
 						<div class="card-header">
 							<div class="card-title">
 								<h5 class="display-6 homePageCardsTitle">Salads</h5>
@@ -326,25 +286,15 @@
 						<div class="card-body">
 							<div class="carousel slide carousel-fade" id="carouselPastryFade" data-bs-ride="carousel">
 								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<img src="{{url('/images/homepage/salads/fruit-salads/fruit-salads.jpg')}}" class="saladsCardImage" alt="fruit-salads">
-									</div>
+									<div class="carousel-item active" id="saladsItem1"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/salads/vegetable-salads/vegetable-salads.jpg')}}" class="saladsCardImage" alt="vegetable-salads">
-									</div>
+									<div class="carousel-item" id="saladsItem2"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/salads/fruit-salads/fruit-salads-2.jpg')}}" class="saladsCardImage" alt="fruit-salads">
-									</div>
+									<div class="carousel-item" id="saladsItem3"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/salads/vegetable-salads/vegetable-salads-4.jpg')}}" class="saladsCardImage" alt="vegetable-salads">
-									</div>
+									<div class="carousel-item" id="saladsItem4"></div>
 
-									<div class="carousel-item">
-										<img src="{{url('/images/homepage/salads/fruit-salads/fruit-salads-5.jpg')}}" class="saladsCardImage" alt="fruit-salads">
-									</div>
+									<div class="carousel-item" id="saladsItem4"></div>
 								</div>
 							</div>
 						</div>
@@ -370,14 +320,14 @@
 		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 			<h5 class="display-6 text-center text-white occasionsTitleText">With You Every Step Of The Way</h5>
 
-			<p class="text-white occasionsContentText"><b><i>BigMomPastry</i></b> will be with you through every step in <i>life.</i></p>
+			<p class="text-white text-center"><b><i>BigMomPastry</i></b> will be with you through every step in <i>life.</i></p>
 
 			<div class="swiper-container pt-3 pb-3">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide homePageSlides" id="homePageSlide1">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fa-solid fa-heart"></i><b><i>Courtship</i></b></h5>
-							<p class="slide-cards-text text-white" id="">We have been there fueling the fire, fueling the romance between couples with state of the art pastry and confectionery.</p>
+							<p class="slide-cards-text text-white" id="">We have been there fueling the fire, fueling the romance between couples with state-of-the-art pastry and confectionery.</p>
 						</div>
 					</div>
 
@@ -391,21 +341,21 @@
 					<div class="swiper-slide homePageSlides" id="homePageSlide3">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fa-solid fa-baby"></i><b><i>The patter of tiny feet</i></b></h5>
-							<p class="slide-cards-text text-white" id="">When couples had their baby, we were there to share in their joy, by serving them the most fresh fruits and vegetables salad that money could buy.</p>
+							<p class="slide-cards-text text-white" id="">When couples had their baby, we were there to share in their joy, by serving them the freshest fruits and vegetables salad that money could buy.</p>
 						</div>
 					</div>
 
 					<div class="swiper-slide homePageSlides" id="homePageSlide4">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fa-solid fa-gifts"></i><b><i>Birthdays</i></b></h5>
-							<p class="slide-cards-text text-white" id="">Annually, as you celebrate your birthday, we have been there. Serving you the most affordable, best and tasty pastry.</p>
+							<p class="slide-cards-text text-white" id="">Annually, as you celebrate your birthday, we have been there. Serving you the most affordable, best, and tasty pastry.</p>
 						</div>
 					</div>
 
 					<div class="swiper-slide homePageSlides" id="homePageSlide5">
 						<div class="sliding-cards-black-shade">
 							<h5 class="display-6 slide-cards-header-text text-white" id=""><i class="fas fa-cake"></i><b><i>Special Occasions</i></b></h5>
-							<p class="slide-cards-text text-white" id="">We have been there with you through the graduations, job promotions, marriage proposals and even at weddings. Serving you nothing but the best and finest pastry and confectionery.</p>
+							<p class="slide-cards-text text-white" id="">We have been there with you through the graduations, job promotions, marriage proposals, and even at weddings. Serving you nothing but the best and finest pastry and confectionery.</p>
 						</div>
 					</div>
 

@@ -187,37 +187,37 @@
 	</div>
 
 	<div class="row pt-3 pb-5 darkShade">
-		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+		<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 			<div class="carousel slide carousel-fade" id="outTeam" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="row pt-3 pb-5">
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/scott.jpg" class="teamImage">
+										<img class="teamImage1">
 
-										<p class="text-white text-center"><q>At BigMomPastry we believe that we are more than just a business positively impacting the community. We are proud to spear head efforts in creating change and innovation within the community. We are proud of how far we have come, because of our clients, shareholders and employees, and how far we are going. We are BigMomPastry.</q></p>
-										<p class="text-white text-center"><b>Managing Director</b></p>
-										<p class="text-white text-center"><i>Sir.Scotney Mamai</i></p>
+										<p class="text-white"><q>At BigMomPastry we believe that we are more than just a business positively impacting the community. We are proud to spear head efforts in creating change and innovation within the community. We are proud of how far we have come, because of our clients, shareholders and employees, and how far we are going. We are BigMomPastry.</q></p>
+										<p class="text-white"><b>Managing Director</b></p>
+										<p class="text-white"><i>Sir.Scotney Mamai</i></p>
 									</div>
 
 									<div class="card-footer"></div>
 								</div>
 							</div>
 
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/default.jpg" class="teamImage">
+										<img class="teamImage2">
 
 										<p class="text-white text-center"><q>I believe that what we are doing here will impact not only the current generation but also generations to come. It's more than just making a difference within the local community. It's impacting the nation, the region, the continent and the world as a whole. Every little action from us counts towards that. Towards a unique dream. Towards a specific vision for humanity.</q></p>
 										<p class="text-white text-center"><b>Operations Manager</b></p>
@@ -228,14 +228,14 @@
 								</div>
 							</div>
 
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/default.jpg" class="teamImage">
+										<img class="teamImage3">
 
 										<p class="text-white text-center"><q>It's all in the creativity. If we create basic or plain products, we will not be any different from other bakeries within the same market space/niche. Our target is to give our clients and customers an experience they will never forget. We don't want you to just enjoy good pastry and confectionery, we want you to encounter it, to experience it, to allow it touch the depths of your soul. That's a lifetime's experience from us to you.</q></p>
 										<p class="text-white text-center"><b>Chief Baker</b></p>
@@ -250,14 +250,14 @@
 
 					<div class="carousel-item">
 						<div class="row pt-3 pb-5">
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/eve.jpg" class="teamImage">
+										<img class="teamImage4">
 
 										<p class="text-white text-center"><q>You need to believe that it takes more than just faith to make the world a better place. So, we continously take actions to make peoples' lives better. We'll never grow weary nor tire in delivering on what we have set out to do as a people and as the BigMomPastry community.</q></p>
 										<p class="text-white text-center"><b>Communications, Marketing and Public Relations</b></p>
@@ -268,14 +268,14 @@
 								</div>
 							</div>
 
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/default.jpg" class="teamImage">
+										<img class="teamImage5">
 
 										<p class="text-white text-center"><q>Our main objective is to eradicate poverty within the community, country, region and continent. Africa has a great workforce and an unmatched potential globally. Our role as BigMomPastry is to provide an avenue through which people can earn a living and sustain themselves through legal means. Hence, giving everyone an opportunity towards a better life for them and their future generations.</q></p>
 										<p class="text-white text-center"><b>Human Resources</b></p>
@@ -286,14 +286,14 @@
 								</div>
 							</div>
 
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/default.jpg" class="teamImage">
+										<img class="teamImage6">
 
 										<p class="text-white text-center"><q>We are 100% percent committed to doing what we do because we love creating an impact within the community. We are focussed in not only making profits as a business but also empowering people to position themselves to having a better life. This is strategic to archieving the businesses objectives and goals. It's also important in achieving the vision of poverty eradication and individual empowerment.</q></p>
 										<p class="text-white text-center"><b>Member of Board of Directors</b></p>
@@ -308,14 +308,14 @@
 
 					<div class="carousel-item">
 						<div class="row pt-3 pb-5">
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/default.jpg" class="teamImage">
+										<img class="teamImage7">
 
 										<p class="text-white text-center"><q>We don't want to have a system that mimics other E-Commerce platforms. We want to have something completely unique. Something that's been spunned out of creative and innovative minds. Something that allows people to feel completely different while interacting with it. That's still the same approach we have with our products. We don't want to sell pastry and confectionery like every other bakery. We want to sell fresh and healthy pastry and confectionery. We want to sell products that will have our clients and customers coming back for more not just once, but every time.</q></p>
 										<p class="text-white text-center"><b>Chief Technology Officer (C.T.O)</b></p>
@@ -326,14 +326,14 @@
 								</div>
 							</div>
 
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/default.jpg" class="teamImage">
+										<img class="teamImage8">
 
 										<p class="text-white text-center"><q>Money is the biggest equalizer within business. As we strive to carry on with our day to day activities, we make sure that our expenses don't overrun our income. We strive to make sure our income is more than enough to not only keep the business running but also cater for staff and other finances. Other than that, we strive to set aside enough capital to sustain on-going projects within the community. By improving business operations efficiency, we increase both productivity and effectiveness. Thus setting ourselves up in a better position presently.</q></p>
 										<p class="text-white text-center"><b>Chief Financial Officer (C.F.O)</b></p>
@@ -344,14 +344,14 @@
 								</div>
 							</div>
 
-							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 p-3">
 								<div class="card aboutUsPageCards leftAdjust rightReveal">
 									<div class="card-header">
 										<div class="card-title"></div>
 									</div>
 
 									<div class="card-body">
-										<img src="/images/profile/ourTeam/default.jpg" class="teamImage">
+										<img class="teamImage9">
 
 										<p class="text-white text-center"><q>We want to expand our area of influence within the hospitality industry to the region, continent and the world. We want to change people's lives across all nationalities. Other than that we want to be take part in eradicating poverty across all regions. This will not only leave a mark upon people's hearts but also upon generations to come. Our goals and objectives are completely aligned to our vision and with continous efforts being made to get there, we will eventually reach our destination and turn our vision into reality.</q></p>
 										<p class="text-white text-center"><b>Member of Board of Directors</b></p>

@@ -23,6 +23,8 @@ class BookMasterclass extends Model
         'middle_name',
         'id_number',
         'date_of_birth',
+        'current_date',
+        'current_time',
         'age',
         'phone_number',
         'email',

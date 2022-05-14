@@ -67,7 +67,7 @@
                     </form>
                 </div>
 
-                <div class="card-footer"></div>
+                <div class="card-footer cardFooter"></div>
             </div>
         </div>
     </div>

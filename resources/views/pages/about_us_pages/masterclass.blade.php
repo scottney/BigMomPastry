@@ -8,7 +8,7 @@
             <h5 class="text-white text-center masterClassHeaderText">Book A Masterclass</h5>
             <p class="text-white masterClassHeaderInfoText">Our <b>masterclass</b> has been <i>designed</i> and <i>tested</i> over time to achieve <b><i>perfection</i></b> for our trainess. Our staff have been practicing within the work environment, everything that they teach to the apprentice's. These skills, have been validated by the <b>market</b> as fit, because of the markets' response to our products.</p>
 
-            <p class="text-white masterClassHeaderInfoText">Booking a <b>Masterclass</b> is a 5 steps process:</p>
+            <p class="text-white masterClassHeaderInfoText">Booking a <b>Masterclass</b> is a 4 steps process:</p>
             <div class="carousel slide" id="bookMasterClassStepsCarouselSlide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -22,7 +22,7 @@
                                         <i class="fa-solid fa-id-card fa-2x"></i>
                                     </div>
                                     <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
-                                        <p>Fill in your personal details and proceed to the next step</p>
+                                        <p>Fill in your personal details and contact information for easy communication. Once complete, proceed to the next step.</p>
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@
                                         <i class="fa-solid fa-certificate fa-2x"></i>
                                     </div>
                                     <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
-                                        <p>Select the specific course that you want to apprentice in with us</p>
+                                        <p>Select the specific course that you want to apprentice in with us.</p>
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@
                                         <i class="fa-solid fa-coins fa-2x"></i>
                                     </div>
                                     <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
-                                        <p>Select your preferred payment method and proceed to the next step</p>
+                                        <p>Select your preferred payment method and complete your payment.</p>
                                     </div>
                                 </div>
                             </div>
@@ -79,26 +79,7 @@
                                         <i class="fa-solid fa-file-invoice-dollar fa-2x"></i>
                                     </div>
                                     <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
-                                        <p>Depending on the payment method selected, complete your payment and proceed to the next step</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer"></div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card border bg-warning">
-                            <div class="card-header">
-                                <div class="card-title"></div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                                        <i class="fa-solid fa-clock fa-2x"></i>
-                                    </div>
-                                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
-                                        <p>Finally, after completion of payment, await communication from our representative.</p>
+                                        <p>Confirm payment details within our system and await further communication from our team.</p>
                                     </div>
                                 </div>
                             </div>
